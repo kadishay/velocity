@@ -51,7 +51,7 @@ const navItems = [
 
 export function Sidebar() {
   return (
-    <aside className="w-64 bg-white border-r border-gray-200 min-h-screen">
+    <aside className="w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 min-h-screen">
       <nav className="p-4 space-y-1">
         {navItems.map((item) => (
           <NavLink
@@ -61,8 +61,8 @@ export function Sidebar() {
               clsx(
                 'flex items-center gap-3 px-3 py-2 text-sm font-medium rounded-lg transition-colors',
                 isActive
-                  ? 'bg-blue-50 text-blue-700'
-                  : 'text-gray-700 hover:bg-gray-100'
+                  ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300'
+                  : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
               )
             }
           >

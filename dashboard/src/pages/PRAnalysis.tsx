@@ -4,9 +4,16 @@ import { Error } from '../components/common/Error';
 import { PRMetrics } from '../components/metrics/PRMetrics';
 import { PRFlowDiagram } from '../components/charts/PRFlowDiagram';
 import { CycleTimeBreakdown } from '../components/charts/CycleTimeBreakdown';
+import { DateRangeFilter } from '../components/filters/DateRangeFilter';
+import { RepositoryFilter } from '../components/filters/RepositoryFilter';
+import { TeamFilter } from '../components/filters/TeamFilter';
+import { useFilteredPRMetrics } from '../hooks/useFilteredPRMetrics';
 
 export function PRAnalysis() {
-  const { metrics, loading, error, refresh } = useData();
+  const { metrics, filteredPRs, dateRange, setDateRange, loading, error, refresh } = useData();
+
+  // Compute PR metrics from filtered data
+  const prMetrics = useFilteredPRMetrics({ filteredPRs });
 
   if (loading) {
     return <Loading />;
@@ -22,30 +29,41 @@ export function PRAnalysis() {
 
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">Pull Requests</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          Detailed analysis of pull request metrics
-        </p>
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">Pull Requests</h1>
+          <p className="text-sm text-gray-500 mt-1">
+            {filteredPRs.length} pull requests in selected period
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 flex-wrap">
+          <RepositoryFilter />
+          <TeamFilter />
+          <DateRangeFilter
+            startDate={dateRange.start}
+            endDate={dateRange.end}
+            onChange={(start, end) => setDateRange({ start, end })}
+          />
+        </div>
       </div>
 
       {/* PR Flow Diagram */}
       <div className="bg-white rounded-lg border border-gray-200 p-6">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">PR Flow</h2>
         <p className="text-sm text-gray-500 mb-4">Pull request lifecycle and throughput</p>
-        <PRFlowDiagram data={metrics.pullRequests} height={140} />
+        <PRFlowDiagram data={prMetrics} height={140} />
       </div>
 
       {/* Cycle Time Breakdown */}
       <div className="bg-white rounded-lg border border-gray-200 p-6">
         <h2 className="text-lg font-semibold text-gray-900 mb-4">Cycle Time Breakdown</h2>
         <p className="text-sm text-gray-500 mb-4">Where time is spent in the PR lifecycle</p>
-        <CycleTimeBreakdown prMetrics={metrics.pullRequests} doraMetrics={metrics.dora} height={180} />
+        <CycleTimeBreakdown prMetrics={prMetrics} doraMetrics={metrics.dora} height={180} />
       </div>
 
-      <PRMetrics data={metrics.pullRequests} />
+      <PRMetrics data={prMetrics} />
 
-      {metrics.summary.totalPRs === 0 && (
+      {filteredPRs.length === 0 && (
         <div className="bg-white rounded-lg border border-gray-200 p-12 text-center">
           <div className="w-16 h-16 mx-auto mb-4 text-gray-300">
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">

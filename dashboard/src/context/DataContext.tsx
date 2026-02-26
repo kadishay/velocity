@@ -66,15 +66,17 @@ export function DataProvider({ children }: { children: ReactNode }) {
     setLoading(true);
     setError(null);
     try {
-      const [metricsData, commitsData, deploymentsData, teamsData] = await Promise.all([
+      const [metricsData, commitsData, deploymentsData, prsData, teamsData] = await Promise.all([
         loadMetrics(),
         loadCommits(),
         loadDeployments(),
+        loadPRs(),
         loadTeams(),
       ]);
       setMetrics(metricsData);
       setCommits(commitsData as CommitsFileData);
       setDeployments(deploymentsData as DeploymentsFileData);
+      setPrs(prsData as PRsFileData);
 
       // Use local teams config if available (for persistence), otherwise use loaded data
       const localTeams = getLocalTeams();
@@ -168,6 +170,36 @@ export function DataProvider({ children }: { children: ReactNode }) {
     return filtered;
   }, [deployments, dateRange, selectedRepository]);
 
+  // Filter PRs based on repository and date range
+  const filteredPRs = useMemo((): PRData[] => {
+    if (!prs) return [];
+
+    let filtered: PRData[] = [];
+
+    if (selectedRepository) {
+      const repoPRs = prs.repositories[selectedRepository];
+      if (repoPRs) {
+        filtered = [...repoPRs];
+      }
+    } else {
+      filtered = Object.values(prs.repositories).flat();
+    }
+
+    // Filter by date range
+    filtered = filtered.filter((pr) => {
+      const prDate = new Date(pr.createdAt);
+      return prDate >= dateRange.start && prDate <= dateRange.end;
+    });
+
+    // Filter by team (if selected) - filter by PR author
+    if (selectedTeam && teamsConfig?.teams[selectedTeam]) {
+      const teamMembers = teamsConfig.teams[selectedTeam].members;
+      filtered = filtered.filter((pr) => teamMembers.includes(pr.author));
+    }
+
+    return filtered;
+  }, [prs, dateRange, selectedRepository, selectedTeam, teamsConfig]);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -178,9 +210,11 @@ export function DataProvider({ children }: { children: ReactNode }) {
         metrics,
         commits,
         deployments,
+        prs,
         teamsConfig,
         filteredCommits,
         filteredDeployments,
+        filteredPRs,
         availableRepositories,
         dateRange,
         setDateRange,
