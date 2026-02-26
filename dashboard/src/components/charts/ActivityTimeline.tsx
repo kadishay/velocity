@@ -11,6 +11,7 @@ import {
 } from 'recharts';
 import { format, eachDayOfInterval, startOfDay } from 'date-fns';
 import type { CommitData, DeploymentData } from '../../types';
+import { AnimatedNumber } from '../common/AnimatedNumber';
 
 interface ActivityTimelineProps {
   commits: CommitData[];
@@ -104,19 +105,19 @@ export function ActivityTimeline({
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-blue-500" />
           <span className="text-sm text-gray-600">
-            Commits: <span className="font-medium text-gray-900">{totals.commits}</span>
+            Commits: <AnimatedNumber value={totals.commits} className="font-medium text-gray-900" />
           </span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-violet-500" />
           <span className="text-sm text-gray-600">
-            AI Commits: <span className="font-medium text-gray-900">{totals.aiCommits}</span>
+            AI Commits: <AnimatedNumber value={totals.aiCommits} className="font-medium text-gray-900" />
           </span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-green-500" />
           <span className="text-sm text-gray-600">
-            Deployments: <span className="font-medium text-gray-900">{totals.deployments}</span>
+            Deployments: <AnimatedNumber value={totals.deployments} className="font-medium text-gray-900" />
           </span>
         </div>
       </div>

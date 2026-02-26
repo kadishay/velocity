@@ -1,7 +1,9 @@
 {
   "repositories": [
     "kadishay/company-blueprint",
-    "kadishay/multi-docker"
+    "facebook/react",
+    "vercel/next.js",
+    "microsoft/typescript"
   ],
   "teams": {},
   "settings": {

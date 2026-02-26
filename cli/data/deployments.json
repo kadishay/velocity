@@ -1,13 +1,599 @@
 {
-  "extractedAt": "2026-02-26T09:54:55.865Z",
+  "extractedAt": "2026-02-26T11:46:01.151Z",
   "dateRange": {
-    "start": "2026-01-27T09:54:54.265Z",
-    "end": "2026-02-26T09:54:54.265Z"
+    "start": "2026-01-27T11:45:59.829Z",
+    "end": "2026-02-26T11:45:59.829Z"
   },
   "repositories": {
     "kadishay/company-blueprint": {
       "deployments": [],
       "releases": []
+    },
+    "facebook/react": {
+      "deployments": [],
+      "releases": []
+    },
+    "vercel/next.js": {
+      "deployments": [],
+      "releases": [
+        {
+          "id": 290626595,
+          "tagName": "v16.2.0-canary.62",
+          "name": "v16.2.0-canary.62",
+          "createdAt": "2026-02-25T23:25:59Z",
+          "publishedAt": "2026-02-25T23:33:24Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "e046f052e70e4bbfb8ac6b7d767cabb5bea75368"
+        },
+        {
+          "id": 290265403,
+          "tagName": "v16.2.0-canary.61",
+          "name": "v16.2.0-canary.61",
+          "createdAt": "2026-02-25T10:34:08Z",
+          "publishedAt": "2026-02-25T10:57:04Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "97be0f52e73c14151e985e5af01f87c551402a81"
+        },
+        {
+          "id": 290102304,
+          "tagName": "v16.2.0-canary.60",
+          "name": "v16.2.0-canary.60",
+          "createdAt": "2026-02-24T23:26:28Z",
+          "publishedAt": "2026-02-24T23:39:55Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "2298e89230d01847b37bdc65e2feb64ff881ef45"
+        },
+        {
+          "id": 289637012,
+          "tagName": "v16.2.0-canary.59",
+          "name": "v16.2.0-canary.59",
+          "createdAt": "2026-02-23T23:27:26Z",
+          "publishedAt": "2026-02-23T23:48:15Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "426d0d2e0135853461db4c86ad966ccdfef5bcb5"
+        },
+        {
+          "id": 289209645,
+          "tagName": "v16.2.0-canary.58",
+          "name": "v16.2.0-canary.58",
+          "createdAt": "2026-02-22T23:25:52Z",
+          "publishedAt": "2026-02-22T23:36:23Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "0a07e091e56b82af3bb006d1067da2fc85828090"
+        },
+        {
+          "id": 289059848,
+          "tagName": "v16.2.0-canary.57",
+          "name": "v16.2.0-canary.57",
+          "createdAt": "2026-02-21T23:25:53Z",
+          "publishedAt": "2026-02-21T23:36:18Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "1fedf5b0d348237446505c2950e0b53fd1639ca3"
+        },
+        {
+          "id": 288946431,
+          "tagName": "v16.2.0-canary.56",
+          "name": "v16.2.0-canary.56",
+          "createdAt": "2026-02-21T04:09:23Z",
+          "publishedAt": "2026-02-21T04:33:35Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "3b94d8021af89754ee84252786bd9501a047bdf3"
+        },
+        {
+          "id": 288917629,
+          "tagName": "v16.2.0-canary.55",
+          "name": "v16.2.0-canary.55",
+          "createdAt": "2026-02-20T23:25:52Z",
+          "publishedAt": "2026-02-20T23:38:35Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "b6c5adbd400cf10f86ed9ce952ea1bdd25aaaa39"
+        },
+        {
+          "id": 288872911,
+          "tagName": "v16.2.0-canary.54",
+          "name": "v16.2.0-canary.54",
+          "createdAt": "2026-02-20T20:18:47Z",
+          "publishedAt": "2026-02-20T20:29:50Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "e5d04e9866c3714ee046a2fd4be4e3090c858a10"
+        },
+        {
+          "id": 288684484,
+          "tagName": "v16.2.0-canary.53",
+          "name": "v16.2.0-canary.53",
+          "createdAt": "2026-02-20T11:32:27Z",
+          "publishedAt": "2026-02-20T11:42:43Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "e2e38d47f81422b6202d099aee1d3f8461ac76c1"
+        },
+        {
+          "id": 288498385,
+          "tagName": "v16.2.0-canary.52",
+          "name": "v16.2.0-canary.52",
+          "createdAt": "2026-02-19T23:26:14Z",
+          "publishedAt": "2026-02-19T23:37:02Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "87f609e710650c5b05664ac1da3b2cd35a643d78"
+        },
+        {
+          "id": 287928630,
+          "tagName": "v16.2.0-canary.51",
+          "name": "v16.2.0-canary.51",
+          "createdAt": "2026-02-18T23:26:17Z",
+          "publishedAt": "2026-02-18T23:36:59Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "17a332089e3379c1cfa9e19cc303843201ab6f0e"
+        },
+        {
+          "id": 287478618,
+          "tagName": "v16.2.0-canary.50",
+          "name": "v16.2.0-canary.50",
+          "createdAt": "2026-02-18T00:57:21Z",
+          "publishedAt": "2026-02-18T01:15:31Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "86c3d3ee26980f70294e4cd857db312c01983e4f"
+        },
+        {
+          "id": 287462291,
+          "tagName": "v16.2.0-canary.49",
+          "name": "v16.2.0-canary.49",
+          "createdAt": "2026-02-17T23:26:14Z",
+          "publishedAt": "2026-02-17T23:43:02Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "4d3b25070277fba906917a90e0953f33a966151a"
+        },
+        {
+          "id": 287035016,
+          "tagName": "v16.2.0-canary.48",
+          "name": "v16.2.0-canary.48",
+          "createdAt": "2026-02-17T00:26:10Z",
+          "publishedAt": "2026-02-17T00:45:24Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "537da8bdfa15a88a11ace61860b0f1f9957c583d"
+        },
+        {
+          "id": 287023926,
+          "tagName": "v16.2.0-canary.47",
+          "name": "v16.2.0-canary.47",
+          "createdAt": "2026-02-16T23:26:11Z",
+          "publishedAt": "2026-02-16T23:36:28Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "24e369011827f4dac98b4e82085b8b2e3c2b9d09"
+        },
+        {
+          "id": 286449719,
+          "tagName": "v16.2.0-canary.46",
+          "name": "v16.2.0-canary.46",
+          "createdAt": "2026-02-14T23:25:23Z",
+          "publishedAt": "2026-02-14T23:41:03Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "779ed0a53c53d2f5e7b8193d4f6a5a2af513bec3"
+        },
+        {
+          "id": 286274564,
+          "tagName": "v16.2.0-canary.45",
+          "name": "v16.2.0-canary.45",
+          "createdAt": "2026-02-13T23:26:29Z",
+          "publishedAt": "2026-02-13T23:44:19Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "bd473d007b461eab4866e38c66590f79e26c370f"
+        },
+        {
+          "id": 286225950,
+          "tagName": "v16.2.0-canary.43",
+          "name": "v16.2.0-canary.43",
+          "createdAt": "2026-02-13T20:06:59Z",
+          "publishedAt": "2026-02-13T20:22:19Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "ea3e11bc15bca951b519a2343bc702d76006eb96"
+        },
+        {
+          "id": 286197296,
+          "tagName": "v16.2.0-canary.42",
+          "name": "v16.2.0-canary.42",
+          "createdAt": "2026-02-13T18:33:07Z",
+          "publishedAt": "2026-02-13T18:42:38Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "9abda03e1a26056d10af457910d788dea61cf691"
+        },
+        {
+          "id": 285945330,
+          "tagName": "v16.2.0-canary.41",
+          "name": "v16.2.0-canary.41",
+          "createdAt": "2026-02-13T03:19:33Z",
+          "publishedAt": "2026-02-13T03:36:27Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "8b2b0a6fcee802a3576c24e0b6e3b60d41904668"
+        },
+        {
+          "id": 285907367,
+          "tagName": "v16.2.0-canary.40",
+          "name": "v16.2.0-canary.40",
+          "createdAt": "2026-02-12T23:26:03Z",
+          "publishedAt": "2026-02-12T23:38:59Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "ea8651a7c4f9f5249dc2f8c82b16700f676eae9c"
+        },
+        {
+          "id": 285858617,
+          "tagName": "v16.2.0-canary.39",
+          "name": "v16.2.0-canary.39",
+          "createdAt": "2026-02-12T20:49:10Z",
+          "publishedAt": "2026-02-12T21:00:38Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "ceb281e1ad95335a2f03b5b00b413b591bd4c166"
+        },
+        {
+          "id": 285788392,
+          "tagName": "v16.2.0-canary.38",
+          "name": "v16.2.0-canary.38",
+          "createdAt": "2026-02-12T17:24:26Z",
+          "publishedAt": "2026-02-12T17:32:55Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "002f5197c80da62ef0b796ffddb3cb158a18941b"
+        },
+        {
+          "id": 285474478,
+          "tagName": "v16.2.0-canary.37",
+          "name": "v16.2.0-canary.37",
+          "createdAt": "2026-02-11T23:26:34Z",
+          "publishedAt": "2026-02-11T23:42:26Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "7a014a7f89d0b1d4d4bec5924a10d721fdcd84a7"
+        },
+        {
+          "id": 285411254,
+          "tagName": "v16.2.0-canary.36",
+          "name": "v16.2.0-canary.36",
+          "createdAt": "2026-02-11T20:01:15Z",
+          "publishedAt": "2026-02-11T20:12:29Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "2009c62307cca6d75bd8ae14ac26ef913e966c41"
+        },
+        {
+          "id": 285042440,
+          "tagName": "v16.2.0-canary.35",
+          "name": "v16.2.0-canary.35",
+          "createdAt": "2026-02-10T23:28:29Z",
+          "publishedAt": "2026-02-10T23:46:55Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "381aa36ebbb71a1bef050d47164a94e4b7da48c8"
+        },
+        {
+          "id": 284993883,
+          "tagName": "v16.2.0-canary.34",
+          "name": "v16.2.0-canary.34",
+          "createdAt": "2026-02-10T20:18:52Z",
+          "publishedAt": "2026-02-10T20:28:54Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "a9ecc09b6a3633492ba8b1b5b35a5d7dbe574c8d"
+        },
+        {
+          "id": 284610291,
+          "tagName": "v16.2.0-canary.33",
+          "name": "v16.2.0-canary.33",
+          "createdAt": "2026-02-09T23:28:19Z",
+          "publishedAt": "2026-02-09T23:45:50Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "6f58bfa6421a03ba39ab7d052462be6ca9647aec"
+        },
+        {
+          "id": 284230549,
+          "tagName": "v16.2.0-canary.32",
+          "name": "v16.2.0-canary.32",
+          "createdAt": "2026-02-08T23:27:00Z",
+          "publishedAt": "2026-02-08T23:36:06Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "d87bcc61ef627884914985638dcc4955009f450a"
+        },
+        {
+          "id": 284086060,
+          "tagName": "v16.2.0-canary.31",
+          "name": "v16.2.0-canary.31",
+          "createdAt": "2026-02-07T23:26:28Z",
+          "publishedAt": "2026-02-07T23:36:54Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "160765827742f8423edce7c72e48a21012685ae7"
+        },
+        {
+          "id": 283911366,
+          "tagName": "v16.2.0-canary.30",
+          "name": "v16.2.0-canary.30",
+          "createdAt": "2026-02-06T21:46:59Z",
+          "publishedAt": "2026-02-06T22:00:17Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "7cd9c7071ea92d599b7415d0d1c195a17a2407f0"
+        },
+        {
+          "id": 283558087,
+          "tagName": "v16.2.0-canary.29",
+          "name": "v16.2.0-canary.29",
+          "createdAt": "2026-02-05T23:25:39Z",
+          "publishedAt": "2026-02-05T23:35:42Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "ffd953c4cd8101f7d03205a4a7c85a50330f97d6"
+        },
+        {
+          "id": 283202911,
+          "tagName": "v16.2.0-canary.28",
+          "name": "v16.2.0-canary.28",
+          "createdAt": "2026-02-05T03:18:04Z",
+          "publishedAt": "2026-02-05T03:26:51Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "ca1e1c7d7b2cf6ac040a4f2bda4b5315ab6b439c"
+        },
+        {
+          "id": 283167522,
+          "tagName": "v16.2.0-canary.27",
+          "name": "v16.2.0-canary.27",
+          "createdAt": "2026-02-04T23:25:58Z",
+          "publishedAt": "2026-02-04T23:43:04Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "ab8e7865b90b5590daddb35ed1990e227d1119b6"
+        },
+        {
+          "id": 283069408,
+          "tagName": "v15.5.12",
+          "name": "v15.5.12",
+          "createdAt": "2026-02-04T17:39:06Z",
+          "publishedAt": "2026-02-04T17:53:23Z",
+          "author": "ijjk",
+          "isDraft": false,
+          "isPrerelease": false,
+          "targetCommitish": "canary"
+        },
+        {
+          "id": 282769434,
+          "tagName": "v16.2.0-canary.26",
+          "name": "v16.2.0-canary.26",
+          "createdAt": "2026-02-03T23:26:24Z",
+          "publishedAt": "2026-02-03T23:36:38Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "c8ad192a71e22722c50a766080605c47a0f10cfe"
+        },
+        {
+          "id": 282681910,
+          "tagName": "v16.2.0-canary.25",
+          "name": "v16.2.0-canary.25",
+          "createdAt": "2026-02-03T18:29:46Z",
+          "publishedAt": "2026-02-03T18:42:27Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "2465b50cd47146a1dc3d39c916bd970b5ab8dca6"
+        },
+        {
+          "id": 282349318,
+          "tagName": "v16.2.0-canary.24",
+          "name": "v16.2.0-canary.24",
+          "createdAt": "2026-02-02T23:26:21Z",
+          "publishedAt": "2026-02-02T23:36:37Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "b91cf900ed2fac0bbaae17d1bbee8d8eb650a2f1"
+        },
+        {
+          "id": 281849448,
+          "tagName": "v16.2.0-canary.23",
+          "name": "v16.2.0-canary.23",
+          "createdAt": "2026-01-31T23:25:07Z",
+          "publishedAt": "2026-01-31T23:35:09Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "d77e3d4cf3ba60457c5f764c4f73bebcb57c800f"
+        },
+        {
+          "id": 281714355,
+          "tagName": "v16.2.0-canary.22",
+          "name": "v16.2.0-canary.22",
+          "createdAt": "2026-01-30T23:25:29Z",
+          "publishedAt": "2026-01-30T23:39:24Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "fc60622f89b34b9a7534c664248ee94f19046135"
+        },
+        {
+          "id": 281709490,
+          "tagName": "v16.2.0-canary.21",
+          "name": "v16.2.0-canary.21",
+          "createdAt": "2026-01-30T22:54:54Z",
+          "publishedAt": "2026-01-30T23:05:44Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "cf7cfe27ecbfdec8ae95188bc16685772a2b2945"
+        },
+        {
+          "id": 281681259,
+          "tagName": "v16.2.0-canary.20",
+          "name": "v16.2.0-canary.20",
+          "createdAt": "2026-01-30T21:11:21Z",
+          "publishedAt": "2026-01-30T21:20:30Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "7e33c44ba900871163286e389e814e12c93cb3c2"
+        },
+        {
+          "id": 281632467,
+          "tagName": "v16.2.0-canary.19",
+          "name": "v16.2.0-canary.19",
+          "createdAt": "2026-01-30T19:06:23Z",
+          "publishedAt": "2026-01-30T19:22:47Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "eb828c684e9aa964b1545f064b17af5ef36079aa"
+        },
+        {
+          "id": 281540279,
+          "tagName": "v16.2.0-canary.18",
+          "name": "v16.2.0-canary.18",
+          "createdAt": "2026-01-30T15:05:31Z",
+          "publishedAt": "2026-01-30T15:15:10Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "7517e3ec264e26fdc34c39d5669912c8d9a2d6db"
+        },
+        {
+          "id": 281313425,
+          "tagName": "v16.2.0-canary.17",
+          "name": "v16.2.0-canary.17",
+          "createdAt": "2026-01-29T23:07:42Z",
+          "publishedAt": "2026-01-29T23:16:12Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "2b0edf628e201b56bdeacc62a5fb3d2597132761"
+        },
+        {
+          "id": 280955694,
+          "tagName": "v16.2.0-canary.16",
+          "name": "v16.2.0-canary.16",
+          "createdAt": "2026-01-29T04:16:02Z",
+          "publishedAt": "2026-01-29T04:27:26Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "b5c46080448317ad7f3a9390721b5ac84f828ad6"
+        },
+        {
+          "id": 280909726,
+          "tagName": "v16.2.0-canary.15",
+          "name": "v16.2.0-canary.15",
+          "createdAt": "2026-01-28T23:25:54Z",
+          "publishedAt": "2026-01-29T02:03:08Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "fcbcb6dc930da5d49b1f4a026fd8d6a1a7fc2e7e"
+        },
+        {
+          "id": 280910195,
+          "tagName": "v15.5.11",
+          "name": "v15.5.11",
+          "createdAt": "2026-01-28T22:20:20Z",
+          "publishedAt": "2026-01-28T23:29:05Z",
+          "author": "ztanner",
+          "isDraft": false,
+          "isPrerelease": false,
+          "targetCommitish": "canary"
+        },
+        {
+          "id": 280496186,
+          "tagName": "v16.2.0-canary.14",
+          "name": "v16.2.0-canary.14",
+          "createdAt": "2026-01-27T23:25:01Z",
+          "publishedAt": "2026-01-27T23:41:11Z",
+          "author": "nextjs-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "02d8ff2cf3b3cdb0101981321ee7a31730d6a843"
+        },
+        {
+          "id": 280501199,
+          "tagName": "v16.1.6",
+          "name": "v16.1.6",
+          "createdAt": "2026-01-27T21:41:16Z",
+          "publishedAt": "2026-01-27T23:56:47Z",
+          "author": "ztanner",
+          "isDraft": false,
+          "isPrerelease": false,
+          "targetCommitish": "canary"
+        }
+      ]
+    },
+    "microsoft/typescript": {
+      "deployments": [],
+      "releases": [
+        {
+          "id": 285380703,
+          "tagName": "v6.0-beta",
+          "name": "TypeScript 6.0 Beta",
+          "createdAt": "2026-02-09T01:19:09Z",
+          "publishedAt": "2026-02-18T18:11:46Z",
+          "author": "typescript-bot",
+          "isDraft": false,
+          "isPrerelease": true,
+          "targetCommitish": "5ccf24e9c4f7a66cbce23bdd0476fabb39945b9b"
+        }
+      ]
     }
   }
 }

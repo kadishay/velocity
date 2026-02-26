@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState, useMemo, ReactNode } from 'react';
-import type { MetricsData, CommitsFileData, DeploymentsFileData, CommitData, TeamsConfig, DeploymentData } from '../types';
-import { loadMetrics, loadCommits, loadDeployments, loadTeams, saveTeams, getLocalTeams } from '../services/dataLoader';
+import type { MetricsData, CommitsFileData, DeploymentsFileData, PRsFileData, CommitData, TeamsConfig, DeploymentData, PRData } from '../types';
+import { loadMetrics, loadCommits, loadDeployments, loadPRs, loadTeams, saveTeams, getLocalTeams } from '../services/dataLoader';
 
 interface DateRange {
   start: Date;
@@ -12,11 +12,13 @@ interface DataContextType {
   metrics: MetricsData | null;
   commits: CommitsFileData | null;
   deployments: DeploymentsFileData | null;
+  prs: PRsFileData | null;
   teamsConfig: TeamsConfig | null;
 
   // Filtered data
   filteredCommits: CommitData[];
   filteredDeployments: DeploymentData[];
+  filteredPRs: PRData[];
 
   // Available options for filters (derived from data)
   availableRepositories: string[];
@@ -45,6 +47,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [metrics, setMetrics] = useState<MetricsData | null>(null);
   const [commits, setCommits] = useState<CommitsFileData | null>(null);
   const [deployments, setDeployments] = useState<DeploymentsFileData | null>(null);
+  const [prs, setPrs] = useState<PRsFileData | null>(null);
   const [teamsConfig, setTeamsConfig] = useState<TeamsConfig | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

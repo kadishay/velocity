@@ -23,8 +23,8 @@ export function Teams() {
   const [newTeamId, setNewTeamId] = useState('');
   const [newTeamName, setNewTeamName] = useState('');
   const [newTeamColor, setNewTeamColor] = useState(DEFAULT_COLORS[0]);
-  const [newTeamMembers, setNewTeamMembers] = useState('');
-  const [newTeamRepos, setNewTeamRepos] = useState('');
+  const [newTeamMembers, setNewTeamMembers] = useState<string[]>([]);
+  const [newTeamRepos, setNewTeamRepos] = useState<string[]>([]);
 
   if (loading) {
     return <Loading />;
@@ -50,14 +50,6 @@ export function Teams() {
     if (!newTeamId.trim() || !newTeamName.trim()) return;
 
     const teamId = newTeamId.trim().toLowerCase().replace(/\s+/g, '-');
-    const members = newTeamMembers
-      .split(',')
-      .map((m) => m.trim())
-      .filter(Boolean);
-    const repos = newTeamRepos
-      .split(',')
-      .map((r) => r.trim())
-      .filter(Boolean);
 
     const newConfig: TeamsConfig = {
       ...teamsConfig,
@@ -65,8 +57,8 @@ export function Teams() {
         ...teamsConfig.teams,
         [teamId]: {
           displayName: newTeamName.trim(),
-          members,
-          repositories: repos,
+          members: newTeamMembers,
+          repositories: newTeamRepos,
           color: newTeamColor,
         },
       },
@@ -76,8 +68,8 @@ export function Teams() {
     setIsAddingTeam(false);
     setNewTeamId('');
     setNewTeamName('');
-    setNewTeamMembers('');
-    setNewTeamRepos('');
+    setNewTeamMembers([]);
+    setNewTeamRepos([]);
   };
 
   const handleDeleteTeam = (teamId: string) => {
@@ -174,29 +166,86 @@ export function Teams() {
                 ))}
               </div>
             </div>
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Members (comma-separated)
-              </label>
-              <input
-                type="text"
-                value={newTeamMembers}
-                onChange={(e) => setNewTeamMembers(e.target.value)}
-                placeholder="e.g., alice, bob, charlie"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+            <div className="col-span-2">
+              <label className="block text-sm font-medium text-gray-700 mb-2">Members</label>
+              <div className="flex flex-wrap gap-2 mb-2">
+                {newTeamMembers.map((member) => (
+                  <span
+                    key={member}
+                    className="inline-flex items-center gap-1 px-3 py-1 bg-white border border-gray-300 rounded-full text-sm"
+                  >
+                    {member}
+                    <button
+                      type="button"
+                      onClick={() => setNewTeamMembers(newTeamMembers.filter((m) => m !== member))}
+                      className="text-gray-400 hover:text-red-500"
+                    >
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </span>
+                ))}
+              </div>
+              <select
+                value=""
+                onChange={(e) => {
+                  if (e.target.value && !newTeamMembers.includes(e.target.value)) {
+                    setNewTeamMembers([...newTeamMembers, e.target.value]);
+                  }
+                }}
+                className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+              >
+                <option value="">Select contributor...</option>
+                {allContributors
+                  .filter((c) => !newTeamMembers.includes(c))
+                  .sort()
+                  .map((contributor) => (
+                    <option key={contributor} value={contributor}>
+                      {contributor}
+                    </option>
+                  ))}
+              </select>
             </div>
             <div className="col-span-2">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Repositories (comma-separated, optional)
-              </label>
-              <input
-                type="text"
-                value={newTeamRepos}
-                onChange={(e) => setNewTeamRepos(e.target.value)}
-                placeholder="e.g., owner/repo1, owner/repo2"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
+              <label className="block text-sm font-medium text-gray-700 mb-2">Repositories (optional)</label>
+              <div className="flex flex-wrap gap-2 mb-2">
+                {newTeamRepos.map((repo) => (
+                  <span
+                    key={repo}
+                    className="inline-flex items-center gap-1 px-3 py-1 bg-white border border-gray-300 rounded-full text-sm"
+                  >
+                    {repo}
+                    <button
+                      type="button"
+                      onClick={() => setNewTeamRepos(newTeamRepos.filter((r) => r !== repo))}
+                      className="text-gray-400 hover:text-red-500"
+                    >
+                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </span>
+                ))}
+              </div>
+              <select
+                value=""
+                onChange={(e) => {
+                  if (e.target.value && !newTeamRepos.includes(e.target.value)) {
+                    setNewTeamRepos([...newTeamRepos, e.target.value]);
+                  }
+                }}
+                className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+              >
+                <option value="">Select repository...</option>
+                {allRepositories
+                  .filter((r) => !newTeamRepos.includes(r))
+                  .map((repo) => (
+                    <option key={repo} value={repo}>
+                      {repo}
+                    </option>
+                  ))}
+              </select>
             </div>
           </div>
           <div className="flex justify-end gap-2 mt-4">

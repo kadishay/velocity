@@ -1,6 +1,7 @@
 import { clsx } from 'clsx';
 import type { DORALevel } from '../../types';
 import { getDoraLevelColor, getDoraLevelLabel } from '../../utils/formatters';
+import { AnimatedNumber } from '../common/AnimatedNumber';
 
 interface MetricCardProps {
   title: string;
@@ -12,16 +13,20 @@ interface MetricCardProps {
   };
   level?: DORALevel;
   icon?: React.ReactNode;
+  animate?: boolean;
 }
 
-export function MetricCard({ title, value, subtitle, trend, level, icon }: MetricCardProps) {
+export function MetricCard({ title, value, subtitle, trend, level, icon, animate = false }: MetricCardProps) {
+  const displayValue = animate && typeof value === 'number'
+    ? <AnimatedNumber value={value} />
+    : value;
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-6">
       <div className="flex items-start justify-between">
         <div className="flex-1">
           <p className="text-sm font-medium text-gray-500">{title}</p>
           <div className="mt-2 flex items-baseline gap-2">
-            <p className="text-3xl font-semibold text-gray-900">{value}</p>
+            <p className="text-3xl font-semibold text-gray-900">{displayValue}</p>
             {level && (
               <span
                 className="px-2 py-0.5 text-xs font-medium rounded-full"

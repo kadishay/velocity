@@ -1,21 +1,21 @@
 {
-  "calculatedAt": "2026-02-26T09:55:06.452Z",
+  "calculatedAt": "2026-02-26T11:50:54.147Z",
   "dateRange": {
-    "start": "2026-01-27T09:54:54.265Z",
-    "end": "2026-02-26T09:54:54.265Z"
+    "start": "2026-01-27T11:45:59.829Z",
+    "end": "2026-02-26T11:45:59.829Z"
   },
   "summary": {
-    "repositories": 1,
-    "totalPRs": 0,
-    "totalCommits": 13,
+    "repositories": 4,
+    "totalPRs": 184,
+    "totalCommits": 611,
     "totalDeployments": 0
   },
   "dora": {
     "leadTimeForChanges": {
-      "averageHours": 0,
-      "medianHours": 0,
-      "p90Hours": 0,
-      "formatted": "0m"
+      "averageHours": 11.9,
+      "medianHours": 5.6,
+      "p90Hours": 25.8,
+      "formatted": "5.6h"
     },
     "deploymentFrequency": {
       "perDay": 0,
@@ -29,80 +29,393 @@
   },
   "pullRequests": {
     "timeToFirstReview": {
-      "averageHours": 0,
-      "medianHours": 0,
-      "formatted": "0m"
+      "averageHours": 3.7,
+      "medianHours": 0.8,
+      "formatted": "48m"
     },
     "timeToMerge": {
-      "averageHours": 0,
-      "medianHours": 0,
-      "formatted": "0m"
+      "averageHours": 11.9,
+      "medianHours": 5.6,
+      "formatted": "5.6h"
     },
     "throughput": {
-      "opened": 0,
-      "merged": 0,
-      "closed": 0
+      "opened": 184,
+      "merged": 70,
+      "closed": 49
     },
     "sizeDistribution": {
-      "xs": 0,
-      "s": 0,
-      "m": 0,
-      "l": 0,
-      "xl": 0
+      "xs": 31,
+      "s": 55,
+      "m": 54,
+      "l": 13,
+      "xl": 31
     }
   },
   "commits": {
-    "total": 13,
+    "total": 611,
     "frequency": {
-      "perDay": 0.43,
-      "perWeek": 3.03
+      "perDay": 20.37,
+      "perWeek": 142.57
     },
     "contributors": {
-      "total": 1,
+      "total": 90,
       "top": [
         {
-          "author": "kadishay",
-          "commits": 13
+          "author": "eps1lon",
+          "commits": 72
+        },
+        {
+          "author": "nextjs-bot",
+          "commits": 61
+        },
+        {
+          "author": "mischnic",
+          "commits": 51
+        },
+        {
+          "author": "ijjk",
+          "commits": 38
+        },
+        {
+          "author": "sokra",
+          "commits": 30
+        },
+        {
+          "author": "unstubbable",
+          "commits": 28
+        },
+        {
+          "author": "lukesandberg",
+          "commits": 25
+        },
+        {
+          "author": "josephsavona",
+          "commits": 23
+        },
+        {
+          "author": "vercel-release-bot",
+          "commits": 21
+        },
+        {
+          "author": "acdlite",
+          "commits": 20
         }
       ]
     }
   },
   "ai": {
     "summary": {
-      "totalAICommits": 4,
-      "totalCommits": 13,
-      "aiRatio": 0.31,
-      "usersWithAI": 1,
-      "totalUsers": 1
+      "totalAICommits": 33,
+      "totalCommits": 611,
+      "aiRatio": 0.05,
+      "usersWithAI": 16,
+      "totalUsers": 90
     },
     "byTool": [
       {
+        "tool": "cursor",
+        "commits": 16,
+        "users": 7
+      },
+      {
+        "tool": "other",
+        "commits": 11,
+        "users": 9
+      },
+      {
         "tool": "claude",
-        "commits": 4,
-        "users": 1
+        "commits": 5,
+        "users": 2
       }
     ],
     "byUser": [
+      {
+        "author": "eps1lon",
+        "aiCommits": 9,
+        "totalCommits": 72,
+        "ratio": 0.13,
+        "primaryTool": "cursor"
+      },
       {
         "author": "kadishay",
         "aiCommits": 4,
         "totalCommits": 13,
         "ratio": 0.31,
         "primaryTool": "claude"
+      },
+      {
+        "author": "feedthejim",
+        "aiCommits": 2,
+        "totalCommits": 8,
+        "ratio": 0.25,
+        "primaryTool": "cursor"
+      },
+      {
+        "author": "devjiwonchoi",
+        "aiCommits": 2,
+        "totalCommits": 10,
+        "ratio": 0.2,
+        "primaryTool": "other"
+      },
+      {
+        "author": "vercel-release-bot",
+        "aiCommits": 2,
+        "totalCommits": 21,
+        "ratio": 0.1,
+        "primaryTool": "other"
+      },
+      {
+        "author": "icyJoseph",
+        "aiCommits": 2,
+        "totalCommits": 14,
+        "ratio": 0.14,
+        "primaryTool": "cursor"
+      },
+      {
+        "author": "huozhi",
+        "aiCommits": 2,
+        "totalCommits": 5,
+        "ratio": 0.4,
+        "primaryTool": "cursor"
+      },
+      {
+        "author": "Copilot",
+        "aiCommits": 2,
+        "totalCommits": 2,
+        "ratio": 1,
+        "primaryTool": "other"
+      },
+      {
+        "author": "sokra",
+        "aiCommits": 1,
+        "totalCommits": 30,
+        "ratio": 0.03,
+        "primaryTool": "claude"
+      },
+      {
+        "author": "wbinnssmith",
+        "aiCommits": 1,
+        "totalCommits": 9,
+        "ratio": 0.11,
+        "primaryTool": "other"
+      },
+      {
+        "author": "lavanitha",
+        "aiCommits": 1,
+        "totalCommits": 1,
+        "ratio": 1,
+        "primaryTool": "other"
+      },
+      {
+        "author": "abhishekmardiya",
+        "aiCommits": 1,
+        "totalCommits": 2,
+        "ratio": 0.5,
+        "primaryTool": "other"
+      },
+      {
+        "author": "gaojude",
+        "aiCommits": 1,
+        "totalCommits": 4,
+        "ratio": 0.25,
+        "primaryTool": null
+      },
+      {
+        "author": "swarnava",
+        "aiCommits": 1,
+        "totalCommits": 1,
+        "ratio": 1,
+        "primaryTool": "cursor"
+      },
+      {
+        "author": "freek-boon-greenberry",
+        "aiCommits": 1,
+        "totalCommits": 1,
+        "ratio": 1,
+        "primaryTool": "other"
+      },
+      {
+        "author": "bencmbrook",
+        "aiCommits": 1,
+        "totalCommits": 1,
+        "ratio": 1,
+        "primaryTool": "cursor"
       }
     ],
     "trend": [
       {
-        "date": "2026-01-29",
+        "date": "2026-01-27",
         "aiCommits": 0,
-        "totalCommits": 9,
+        "totalCommits": 11,
+        "ratio": 0
+      },
+      {
+        "date": "2026-01-28",
+        "aiCommits": 2,
+        "totalCommits": 23,
+        "ratio": 0.09
+      },
+      {
+        "date": "2026-01-29",
+        "aiCommits": 3,
+        "totalCommits": 43,
+        "ratio": 0.07
+      },
+      {
+        "date": "2026-01-30",
+        "aiCommits": 2,
+        "totalCommits": 35,
+        "ratio": 0.06
+      },
+      {
+        "date": "2026-01-31",
+        "aiCommits": 0,
+        "totalCommits": 3,
         "ratio": 0
       },
       {
         "date": "2026-02-02",
         "aiCommits": 4,
-        "totalCommits": 4,
-        "ratio": 1
+        "totalCommits": 22,
+        "ratio": 0.18
+      },
+      {
+        "date": "2026-02-03",
+        "aiCommits": 1,
+        "totalCommits": 27,
+        "ratio": 0.04
+      },
+      {
+        "date": "2026-02-04",
+        "aiCommits": 0,
+        "totalCommits": 28,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-05",
+        "aiCommits": 0,
+        "totalCommits": 22,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-06",
+        "aiCommits": 2,
+        "totalCommits": 28,
+        "ratio": 0.07
+      },
+      {
+        "date": "2026-02-07",
+        "aiCommits": 0,
+        "totalCommits": 10,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-08",
+        "aiCommits": 2,
+        "totalCommits": 10,
+        "ratio": 0.2
+      },
+      {
+        "date": "2026-02-09",
+        "aiCommits": 0,
+        "totalCommits": 16,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-10",
+        "aiCommits": 0,
+        "totalCommits": 20,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-11",
+        "aiCommits": 4,
+        "totalCommits": 39,
+        "ratio": 0.1
+      },
+      {
+        "date": "2026-02-12",
+        "aiCommits": 2,
+        "totalCommits": 22,
+        "ratio": 0.09
+      },
+      {
+        "date": "2026-02-13",
+        "aiCommits": 0,
+        "totalCommits": 33,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-14",
+        "aiCommits": 1,
+        "totalCommits": 7,
+        "ratio": 0.14
+      },
+      {
+        "date": "2026-02-16",
+        "aiCommits": 1,
+        "totalCommits": 11,
+        "ratio": 0.09
+      },
+      {
+        "date": "2026-02-17",
+        "aiCommits": 0,
+        "totalCommits": 27,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-18",
+        "aiCommits": 1,
+        "totalCommits": 32,
+        "ratio": 0.03
+      },
+      {
+        "date": "2026-02-19",
+        "aiCommits": 0,
+        "totalCommits": 12,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-20",
+        "aiCommits": 1,
+        "totalCommits": 27,
+        "ratio": 0.04
+      },
+      {
+        "date": "2026-02-21",
+        "aiCommits": 0,
+        "totalCommits": 9,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-22",
+        "aiCommits": 0,
+        "totalCommits": 3,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-23",
+        "aiCommits": 3,
+        "totalCommits": 20,
+        "ratio": 0.15
+      },
+      {
+        "date": "2026-02-24",
+        "aiCommits": 3,
+        "totalCommits": 36,
+        "ratio": 0.08
+      },
+      {
+        "date": "2026-02-25",
+        "aiCommits": 1,
+        "totalCommits": 28,
+        "ratio": 0.04
+      },
+      {
+        "date": "2026-02-26",
+        "aiCommits": 0,
+        "totalCommits": 7,
+        "ratio": 0
       }
     ]
   }

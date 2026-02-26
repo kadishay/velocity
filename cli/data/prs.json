@@ -1,10 +1,5310 @@
 {
-  "extractedAt": "2026-02-26T09:54:55.865Z",
+  "extractedAt": "2026-02-26T11:46:01.150Z",
   "dateRange": {
-    "start": "2026-01-27T09:54:54.265Z",
-    "end": "2026-02-26T09:54:54.265Z"
+    "start": "2026-01-27T11:45:59.829Z",
+    "end": "2026-02-26T11:45:59.829Z"
   },
   "repositories": {
-    "kadishay/company-blueprint": []
+    "kadishay/company-blueprint": [],
+    "facebook/react": [
+      {
+        "number": 35909,
+        "title": "added hi pratham",
+        "author": "prats-13",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T07:08:26Z",
+        "updatedAt": "2026-02-26T07:08:34Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 3,
+        "deletions": 1,
+        "changedFiles": 2,
+        "labels": [],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pratham",
+        "url": "https://github.com/facebook/react/pull/35909"
+      },
+      {
+        "number": 35908,
+        "title": "Bump rollup from 3.29.5 to 3.30.0",
+        "author": "app/dependabot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T07:05:58Z",
+        "updatedAt": "2026-02-26T07:12:23Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 5,
+        "deletions": 6,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed",
+          "dependencies",
+          "javascript"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "dependabot/npm_and_yarn/rollup-3.30.0",
+        "url": "https://github.com/facebook/react/pull/35908"
+      },
+      {
+        "number": 35907,
+        "title": "Bump basic-ftp from 5.0.5 to 5.2.0 in /compiler",
+        "author": "app/dependabot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T22:35:34Z",
+        "updatedAt": "2026-02-25T22:35:39Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 31,
+        "deletions": 6,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed",
+          "dependencies",
+          "javascript"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "dependabot/npm_and_yarn/compiler/basic-ftp-5.2.0",
+        "url": "https://github.com/facebook/react/pull/35907"
+      },
+      {
+        "number": 35906,
+        "title": "[compiler] Add Intl formatter types and fix moduleTypeProvider fallback",
+        "author": "josephsavona",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T21:25:19Z",
+        "updatedAt": "2026-02-25T21:31:59Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 529,
+        "deletions": 7,
+        "changedFiles": 5,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35906",
+        "url": "https://github.com/facebook/react/pull/35906"
+      },
+      {
+        "number": 35905,
+        "title": "[flags] Clean up enableTrustedTypes",
+        "author": "rickhanlonii",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T21:07:47Z",
+        "updatedAt": "2026-02-25T21:10:59Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 39,
+        "deletions": 112,
+        "changedFiles": 16,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "rh/cleanup-trusted-types",
+        "url": "https://github.com/facebook/react/pull/35905"
+      },
+      {
+        "number": 35904,
+        "title": "fix: correct private field type in react-devtools-fusebox package.json",
+        "author": "sudip-kumar-prasad",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T18:53:33Z",
+        "updatedAt": "2026-02-25T19:14:15Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 9,
+        "deletions": 7,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [
+          {
+            "author": "copilot-pull-request-reviewer[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T18:55:59Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/react-devtools-fusebox-private-field",
+        "url": "https://github.com/facebook/react/pull/35904"
+      },
+      {
+        "number": 35901,
+        "title": "[eprh] Check for namespaced useEffectEvent",
+        "author": "chirokas",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T08:50:53Z",
+        "updatedAt": "2026-02-25T08:57:07Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 14,
+        "deletions": 1,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "eprh/check-for-namespaced-useeffectevent",
+        "url": "https://github.com/facebook/react/pull/35901"
+      },
+      {
+        "number": 35900,
+        "title": "Bump minimatch from 3.0.4 to 3.1.3",
+        "author": "app/dependabot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T07:17:31Z",
+        "updatedAt": "2026-02-25T07:23:48Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 6,
+        "deletions": 21,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed",
+          "dependencies",
+          "javascript"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "dependabot/npm_and_yarn/minimatch-3.1.3",
+        "url": "https://github.com/facebook/react/pull/35900"
+      },
+      {
+        "number": 35899,
+        "title": "Bump minimatch from 5.1.6 to 5.1.7 in /compiler/packages/react-forgive/client",
+        "author": "app/dependabot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T23:09:42Z",
+        "updatedAt": "2026-02-24T23:09:48Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 3,
+        "deletions": 3,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed",
+          "dependencies",
+          "javascript"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "dependabot/npm_and_yarn/compiler/packages/react-forgive/client/minimatch-5.1.7",
+        "url": "https://github.com/facebook/react/pull/35899"
+      },
+      {
+        "number": 35898,
+        "title": "fix: handle Symbol values in hook dependency size change warning",
+        "author": "emmaeng700",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T22:27:34Z",
+        "updatedAt": "2026-02-24T22:29:45Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 31,
+        "deletions": 4,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/symbol-in-hook-deps-error-message",
+        "url": "https://github.com/facebook/react/pull/35898"
+      },
+      {
+        "number": 35896,
+        "title": "fix: correct typos in comments and test descriptions",
+        "author": "emmaeng700",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-24T21:21:14Z",
+        "updatedAt": "2026-02-24T21:23:23Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-24T21:23:22Z",
+        "additions": 8,
+        "deletions": 8,
+        "changedFiles": 8,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/typos-in-comments-2",
+        "url": "https://github.com/facebook/react/pull/35896"
+      },
+      {
+        "number": 35895,
+        "title": "Fix typos in comments (becuase/becasue → because, occured → occurred)",
+        "author": "emmaeng700",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-24T21:02:58Z",
+        "updatedAt": "2026-02-24T21:24:29Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-24T21:24:28Z",
+        "additions": 7,
+        "deletions": 7,
+        "changedFiles": 7,
+        "labels": [],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/typos-in-comments",
+        "url": "https://github.com/facebook/react/pull/35895"
+      },
+      {
+        "number": 35894,
+        "title": "[compiler] Add enableObjectIsComparison feature flag",
+        "author": "josephsavona",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T20:59:07Z",
+        "updatedAt": "2026-02-24T21:39:51Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 367,
+        "deletions": 6,
+        "changedFiles": 11,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35894",
+        "url": "https://github.com/facebook/react/pull/35894"
+      },
+      {
+        "number": 35893,
+        "title": "[compiler] Improved ref validation for non-mutating functions",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T17:22:46Z",
+        "updatedAt": "2026-02-24T20:36:33Z",
+        "mergedAt": "2026-02-24T20:36:33Z",
+        "closedAt": "2026-02-24T20:36:33Z",
+        "additions": 276,
+        "deletions": 23,
+        "changedFiles": 8,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "josephsavona",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T17:24:38Z"
+          },
+          {
+            "author": "mofeiZ",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T20:35:00Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35893",
+        "url": "https://github.com/facebook/react/pull/35893"
+      },
+      {
+        "number": 35892,
+        "title": "[Fizz] Deduplicate `<link rel=\"preload\">` from Flight preload hints",
+        "author": "lllomh",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T16:23:58Z",
+        "updatedAt": "2026-02-24T18:45:43Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 25578,
+        "deletions": 18107,
+        "changedFiles": 14,
+        "labels": [],
+        "reviews": [
+          {
+            "author": "eps1lon",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T18:44:35Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/rsc-font-preload-duplicate-35889",
+        "url": "https://github.com/facebook/react/pull/35892"
+      },
+      {
+        "number": 35891,
+        "title": "[DevTools] Fix ReactDevToolsBackend module for AMD",
+        "author": "fullstackhacker",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T15:20:49Z",
+        "updatedAt": "2026-02-24T15:28:00Z",
+        "mergedAt": "2026-02-24T15:28:00Z",
+        "closedAt": "2026-02-24T15:28:00Z",
+        "additions": 2,
+        "deletions": 0,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [
+          {
+            "author": "hoxyq",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T15:27:49Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "react-devtools-amd-fix",
+        "url": "https://github.com/facebook/react/pull/35891"
+      },
+      {
+        "number": 35888,
+        "title": "[compiler] Update docs with fault tolerance summary, remove planning doc",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T22:52:37Z",
+        "updatedAt": "2026-02-24T00:18:44Z",
+        "mergedAt": "2026-02-24T00:18:44Z",
+        "closedAt": "2026-02-24T00:18:44Z",
+        "additions": 23,
+        "deletions": 348,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35888",
+        "url": "https://github.com/facebook/react/pull/35888"
+      },
+      {
+        "number": 35887,
+        "title": "[compiler] Fix TypeError from hoisting nullable closure property deps",
+        "author": "fresh3nough",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-23T20:36:25Z",
+        "updatedAt": "2026-02-23T23:47:55Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T23:47:54Z",
+        "additions": 175,
+        "deletions": 122,
+        "changedFiles": 38,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/compiler-nullable-closure-deps",
+        "url": "https://github.com/facebook/react/pull/35887"
+      },
+      {
+        "number": 35886,
+        "title": "[DevTools] Enable support for the React DevTools Client to connect to different host/port/path ",
+        "author": "fullstackhacker",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T20:18:52Z",
+        "updatedAt": "2026-02-24T15:36:33Z",
+        "mergedAt": "2026-02-24T15:36:33Z",
+        "closedAt": "2026-02-24T15:36:33Z",
+        "additions": 139,
+        "deletions": 16,
+        "changedFiles": 6,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [
+          {
+            "author": "hoxyq",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T15:35:10Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "react-devtools-path",
+        "url": "https://github.com/facebook/react/pull/35886"
+      },
+      {
+        "number": 35885,
+        "title": "fix(compiler): use Object.is() for cache dependency comparison to handle NaN",
+        "author": "fresh3nough",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-23T19:59:12Z",
+        "updatedAt": "2026-02-24T22:14:11Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-24T21:01:59Z",
+        "additions": 1972,
+        "deletions": 1637,
+        "changedFiles": 862,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/compiler-nan-cache-comparison",
+        "url": "https://github.com/facebook/react/pull/35885"
+      },
+      {
+        "number": 35884,
+        "title": "[compiler] Fix Pipeline.ts early-exit, formatting, and style issues",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:13:15Z",
+        "updatedAt": "2026-02-24T00:16:41Z",
+        "mergedAt": "2026-02-24T00:16:41Z",
+        "closedAt": "2026-02-24T00:16:41Z",
+        "additions": 1,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:32:55Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35884",
+        "url": "https://github.com/facebook/react/pull/35884"
+      },
+      {
+        "number": 35883,
+        "title": "[compiler] Rename mismatched variable names after type changes",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:13:13Z",
+        "updatedAt": "2026-02-24T00:13:46Z",
+        "mergedAt": "2026-02-24T00:13:46Z",
+        "closedAt": "2026-02-24T00:13:46Z",
+        "additions": 2,
+        "deletions": 2,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:29:54Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35883",
+        "url": "https://github.com/facebook/react/pull/35883"
+      },
+      {
+        "number": 35882,
+        "title": "[compiler] Remove local CompilerError accumulators, emit directly to env.recordError()",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:13:12Z",
+        "updatedAt": "2026-02-24T00:11:50Z",
+        "mergedAt": "2026-02-24T00:11:50Z",
+        "closedAt": "2026-02-24T00:11:50Z",
+        "additions": 780,
+        "deletions": 649,
+        "changedFiles": 16,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:29:25Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35882",
+        "url": "https://github.com/facebook/react/pull/35882"
+      },
+      {
+        "number": 35881,
+        "title": "[compiler] Remove tryRecord, add catch-all error handling, fix remaining throws",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:13:10Z",
+        "updatedAt": "2026-02-24T00:10:18Z",
+        "mergedAt": "2026-02-24T00:10:17Z",
+        "closedAt": "2026-02-24T00:10:17Z",
+        "additions": 260,
+        "deletions": 243,
+        "changedFiles": 19,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:27:26Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35881",
+        "url": "https://github.com/facebook/react/pull/35881"
+      },
+      {
+        "number": 35880,
+        "title": "[compiler] Cleanup: consistent tryRecord() wrapping and error recording",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:13:08Z",
+        "updatedAt": "2026-02-24T00:08:05Z",
+        "mergedAt": "2026-02-24T00:08:04Z",
+        "closedAt": "2026-02-24T00:08:04Z",
+        "additions": 46,
+        "deletions": 30,
+        "changedFiles": 6,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:24:08Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35880",
+        "url": "https://github.com/facebook/react/pull/35880"
+      },
+      {
+        "number": 35879,
+        "title": "[compiler] Add fault tolerance test fixtures",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:13:07Z",
+        "updatedAt": "2026-02-24T00:06:39Z",
+        "mergedAt": "2026-02-24T00:06:39Z",
+        "closedAt": "2026-02-24T00:06:39Z",
+        "additions": 443,
+        "deletions": 0,
+        "changedFiles": 11,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:19:30Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35879",
+        "url": "https://github.com/facebook/react/pull/35879"
+      },
+      {
+        "number": 35878,
+        "title": "[compiler] Phase 3: Make lower() always produce HIRFunction",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:13:05Z",
+        "updatedAt": "2026-02-24T00:05:05Z",
+        "mergedAt": "2026-02-24T00:05:05Z",
+        "closedAt": "2026-02-24T00:05:05Z",
+        "additions": 207,
+        "deletions": 262,
+        "changedFiles": 10,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:15:10Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35878",
+        "url": "https://github.com/facebook/react/pull/35878"
+      },
+      {
+        "number": 35877,
+        "title": "[compiler] Phase 8: Add multi-error test fixture and update plan",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:13:03Z",
+        "updatedAt": "2026-02-24T00:02:33Z",
+        "mergedAt": "2026-02-24T00:02:32Z",
+        "closedAt": "2026-02-24T00:02:32Z",
+        "additions": 85,
+        "deletions": 6,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:03:06Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35877",
+        "url": "https://github.com/facebook/react/pull/35877"
+      },
+      {
+        "number": 35876,
+        "title": "[compiler] Phase 4 (batch 2), 5, 6: Update remaining passes for fault tolerance",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:13:01Z",
+        "updatedAt": "2026-02-24T00:01:02Z",
+        "mergedAt": "2026-02-24T00:01:02Z",
+        "closedAt": "2026-02-24T00:01:02Z",
+        "additions": 111,
+        "deletions": 107,
+        "changedFiles": 12,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T18:42:09Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35876",
+        "url": "https://github.com/facebook/react/pull/35876"
+      },
+      {
+        "number": 35875,
+        "title": "[compiler] Phase 4 (batch 1): Update validation passes to record errors on env",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:12:59Z",
+        "updatedAt": "2026-02-23T23:35:52Z",
+        "mergedAt": "2026-02-23T23:35:52Z",
+        "closedAt": "2026-02-23T23:35:52Z",
+        "additions": 86,
+        "deletions": 95,
+        "changedFiles": 12,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T18:29:25Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35875",
+        "url": "https://github.com/facebook/react/pull/35875"
+      },
+      {
+        "number": 35874,
+        "title": "[compiler] Phase 2+7: Wrap pipeline passes in tryRecord for fault tolerance",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:12:57Z",
+        "updatedAt": "2026-02-23T23:26:29Z",
+        "mergedAt": "2026-02-23T23:26:28Z",
+        "closedAt": "2026-02-23T23:26:28Z",
+        "additions": 634,
+        "deletions": 90,
+        "changedFiles": 26,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T18:21:05Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35874",
+        "url": "https://github.com/facebook/react/pull/35874"
+      },
+      {
+        "number": 35873,
+        "title": "[compiler] Phase 1: Add error accumulation infrastructure to Environment",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:12:55Z",
+        "updatedAt": "2026-02-23T23:18:24Z",
+        "mergedAt": "2026-02-23T23:18:24Z",
+        "closedAt": "2026-02-23T23:18:24Z",
+        "additions": 83,
+        "deletions": 3,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T18:18:02Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35873",
+        "url": "https://github.com/facebook/react/pull/35873"
+      },
+      {
+        "number": 35872,
+        "title": "[compiler] Add fault tolerance plan document",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:12:53Z",
+        "updatedAt": "2026-02-23T23:15:30Z",
+        "mergedAt": "2026-02-23T23:15:29Z",
+        "closedAt": "2026-02-23T23:15:29Z",
+        "additions": 320,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T18:16:23Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35872",
+        "url": "https://github.com/facebook/react/pull/35872"
+      },
+      {
+        "number": 35871,
+        "title": "Don't hydrate Elements that have dangerouslySetInnerHTML and suppressHydrationWarning",
+        "author": "morbidick",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-23T13:17:49Z",
+        "updatedAt": "2026-02-23T16:05:30Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 63,
+        "deletions": 4,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "feature/suppressHydrationWarningMeansNoHydration",
+        "url": "https://github.com/facebook/react/pull/35871"
+      },
+      {
+        "number": 35870,
+        "title": "[compiler] Fix module-level 'use memo' not compiling in annotation mode",
+        "author": "sleitor",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-23T13:13:19Z",
+        "updatedAt": "2026-02-23T13:13:25Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 90,
+        "deletions": 5,
+        "changedFiles": 4,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix-35868",
+        "url": "https://github.com/facebook/react/pull/35870"
+      },
+      {
+        "number": 35866,
+        "title": "Bump minimatch from 3.0.4 to 10.2.1",
+        "author": "app/dependabot",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-22T21:37:44Z",
+        "updatedAt": "2026-02-25T07:17:37Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-25T07:17:35Z",
+        "additions": 23,
+        "deletions": 19,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed",
+          "dependencies",
+          "javascript"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "dependabot/npm_and_yarn/minimatch-10.2.1",
+        "url": "https://github.com/facebook/react/pull/35866"
+      },
+      {
+        "number": 35865,
+        "title": "Fix stale executionContext after breakpoint/alert interruption (#17355)",
+        "author": "gpardhivvarma",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-22T18:00:47Z",
+        "updatedAt": "2026-02-26T11:23:56Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 20,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/stale-execution-context-17355",
+        "url": "https://github.com/facebook/react/pull/35865"
+      },
+      {
+        "number": 35864,
+        "title": "Refactor: Use centralized hasOwnProperty utility functions",
+        "author": "behnammodi",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-22T16:25:24Z",
+        "updatedAt": "2026-02-22T17:24:21Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 5,
+        "deletions": 5,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "refactor/use-hasOwnProperty-utility",
+        "url": "https://github.com/facebook/react/pull/35864"
+      },
+      {
+        "number": 35863,
+        "title": "fix: change private field from string to boolean",
+        "author": "pickmemory",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-22T16:14:44Z",
+        "updatedAt": "2026-02-22T19:19:29Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/private-field-bool",
+        "url": "https://github.com/facebook/react/pull/35863"
+      },
+      {
+        "number": 35861,
+        "title": "[compiler] Fix Pipeline.ts early-exit, formatting, and style issues",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T21:12:56Z",
+        "updatedAt": "2026-02-23T16:59:55Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:55Z",
+        "additions": 2789,
+        "deletions": 1133,
+        "changedFiles": 79,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35861",
+        "url": "https://github.com/facebook/react/pull/35861"
+      },
+      {
+        "number": 35860,
+        "title": "[compiler] Rename mismatched variable names after type changes",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T21:12:55Z",
+        "updatedAt": "2026-02-23T16:59:53Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:53Z",
+        "additions": 2790,
+        "deletions": 1133,
+        "changedFiles": 79,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35860",
+        "url": "https://github.com/facebook/react/pull/35860"
+      },
+      {
+        "number": 35859,
+        "title": "Fix preserve-manual-memoization false positive with optional chaining deps",
+        "author": "sleitor",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-21T18:33:30Z",
+        "updatedAt": "2026-02-21T18:33:35Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 100,
+        "deletions": 0,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix-35577",
+        "url": "https://github.com/facebook/react/pull/35859"
+      },
+      {
+        "number": 35858,
+        "title": "[react-compiler] Skip hook validation for method calls on untyped module imports",
+        "author": "sleitor",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-21T18:04:19Z",
+        "updatedAt": "2026-02-24T19:36:37Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 60,
+        "deletions": 2,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix-32109",
+        "url": "https://github.com/facebook/react/pull/35858"
+      },
+      {
+        "number": 35857,
+        "title": "[compiler] Surface all lint diagnostics instead of stopping at first validation error",
+        "author": "sleitor",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T17:14:53Z",
+        "updatedAt": "2026-02-22T05:18:45Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-22T05:18:45Z",
+        "additions": 75,
+        "deletions": 4,
+        "changedFiles": 4,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/lint-mode-surface-all-diagnostics",
+        "url": "https://github.com/facebook/react/pull/35857"
+      },
+      {
+        "number": 35856,
+        "title": "fix(eslint-plugin-react-compiler): add TypeScript type declarations",
+        "author": "sleitor",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-21T16:29:45Z",
+        "updatedAt": "2026-02-21T16:29:50Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 30,
+        "deletions": 1,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/eslint-plugin-dts",
+        "url": "https://github.com/facebook/react/pull/35856"
+      },
+      {
+        "number": 35853,
+        "title": "[compiler] Fix Pipeline.ts early-exit, formatting, and style issues",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:33:05Z",
+        "updatedAt": "2026-02-23T16:59:51Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:51Z",
+        "additions": 2790,
+        "deletions": 1133,
+        "changedFiles": 79,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35853",
+        "url": "https://github.com/facebook/react/pull/35853"
+      },
+      {
+        "number": 35852,
+        "title": "[compiler] Rename mismatched variable names after type changes",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:33:03Z",
+        "updatedAt": "2026-02-23T16:59:49Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:49Z",
+        "additions": 2789,
+        "deletions": 1133,
+        "changedFiles": 79,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35852",
+        "url": "https://github.com/facebook/react/pull/35852"
+      },
+      {
+        "number": 35851,
+        "title": "[compiler] Remove local CompilerError accumulators, emit directly to env.recordError()",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:33:02Z",
+        "updatedAt": "2026-02-23T16:59:47Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:47Z",
+        "additions": 2789,
+        "deletions": 1133,
+        "changedFiles": 79,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35851",
+        "url": "https://github.com/facebook/react/pull/35851"
+      },
+      {
+        "number": 35850,
+        "title": "[compiler] Remove tryRecord, add catch-all error handling, fix remaining throws",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:33:01Z",
+        "updatedAt": "2026-02-23T16:59:44Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:44Z",
+        "additions": 2067,
+        "deletions": 542,
+        "changedFiles": 79,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35850",
+        "url": "https://github.com/facebook/react/pull/35850"
+      },
+      {
+        "number": 35849,
+        "title": "[compiler] Cleanup: consistent tryRecord() wrapping and error recording",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:33:00Z",
+        "updatedAt": "2026-02-23T16:59:41Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:41Z",
+        "additions": 2085,
+        "deletions": 491,
+        "changedFiles": 68,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35849",
+        "url": "https://github.com/facebook/react/pull/35849"
+      },
+      {
+        "number": 35848,
+        "title": "[compiler] Add fault tolerance test fixtures",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:32:58Z",
+        "updatedAt": "2026-02-23T16:59:38Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:38Z",
+        "additions": 2053,
+        "deletions": 484,
+        "changedFiles": 68,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35848",
+        "url": "https://github.com/facebook/react/pull/35848"
+      },
+      {
+        "number": 35847,
+        "title": "[compiler] Phase 3: Make lower() always produce HIRFunction",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:32:57Z",
+        "updatedAt": "2026-02-23T16:59:35Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:35Z",
+        "additions": 1615,
+        "deletions": 484,
+        "changedFiles": 58,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35847",
+        "url": "https://github.com/facebook/react/pull/35847"
+      },
+      {
+        "number": 35846,
+        "title": "[compiler] Phase 3: Make lower() always produce HIRFunction",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:32:45Z",
+        "updatedAt": "2026-02-23T16:59:33Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:33Z",
+        "additions": 1615,
+        "deletions": 484,
+        "changedFiles": 58,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35846",
+        "url": "https://github.com/facebook/react/pull/35846"
+      },
+      {
+        "number": 35845,
+        "title": "[compiler] Phase 8: Add multi-error test fixture and update plan",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:32:44Z",
+        "updatedAt": "2026-02-23T16:59:31Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:31Z",
+        "additions": 1442,
+        "deletions": 254,
+        "changedFiles": 50,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35845",
+        "url": "https://github.com/facebook/react/pull/35845"
+      },
+      {
+        "number": 35844,
+        "title": "[compiler] Phase 4 (batch 2), 5, 6: Update remaining passes for fault tolerance",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:32:43Z",
+        "updatedAt": "2026-02-23T16:59:29Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:29Z",
+        "additions": 1363,
+        "deletions": 254,
+        "changedFiles": 48,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35844",
+        "url": "https://github.com/facebook/react/pull/35844"
+      },
+      {
+        "number": 35843,
+        "title": "[compiler] Phase 4 (batch 1): Update validation passes to record errors on env",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:32:42Z",
+        "updatedAt": "2026-02-23T16:59:26Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:26Z",
+        "additions": 1289,
+        "deletions": 184,
+        "changedFiles": 39,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35843",
+        "url": "https://github.com/facebook/react/pull/35843"
+      },
+      {
+        "number": 35842,
+        "title": "[compiler] Phase 2+7: Wrap pipeline passes in tryRecord for fault tolerance",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:32:41Z",
+        "updatedAt": "2026-02-23T16:59:24Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:24Z",
+        "additions": 1293,
+        "deletions": 124,
+        "changedFiles": 34,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35842",
+        "url": "https://github.com/facebook/react/pull/35842"
+      },
+      {
+        "number": 35841,
+        "title": "[compiler] Phase 1: Add error accumulation infrastructure to Environment",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:32:39Z",
+        "updatedAt": "2026-02-23T16:59:21Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:21Z",
+        "additions": 408,
+        "deletions": 1,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35841",
+        "url": "https://github.com/facebook/react/pull/35841"
+      },
+      {
+        "number": 35840,
+        "title": "[compiler] Add fault tolerance plan document",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T03:32:38Z",
+        "updatedAt": "2026-02-23T16:59:17Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T16:59:17Z",
+        "additions": 320,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35840",
+        "url": "https://github.com/facebook/react/pull/35840"
+      },
+      {
+        "number": 35839,
+        "title": "Fix context propagation through suspended Suspense boundaries",
+        "author": "acdlite",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-21T02:00:50Z",
+        "updatedAt": "2026-02-21T03:03:12Z",
+        "mergedAt": "2026-02-21T03:03:12Z",
+        "closedAt": "2026-02-21T03:03:12Z",
+        "additions": 155,
+        "deletions": 5,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "eps1lon",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-21T02:59:08Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix-context-suspended-suspense",
+        "url": "https://github.com/facebook/react/pull/35839"
+      },
+      {
+        "number": 35838,
+        "title": "[compiler] Remove local CompilerError accumulators, emit directly to env.recordError()",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T01:24:56Z",
+        "updatedAt": "2026-02-21T03:33:16Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:33:16Z",
+        "additions": 2872,
+        "deletions": 1182,
+        "changedFiles": 95,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35838",
+        "url": "https://github.com/facebook/react/pull/35838"
+      },
+      {
+        "number": 35837,
+        "title": "[compiler] Remove tryRecord, add catch-all error handling, fix remaining throws",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-21T00:00:55Z",
+        "updatedAt": "2026-02-21T03:33:23Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:33:23Z",
+        "additions": 2133,
+        "deletions": 576,
+        "changedFiles": 98,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35837",
+        "url": "https://github.com/facebook/react/pull/35837"
+      },
+      {
+        "number": 35836,
+        "title": "[compiler] Cleanup: consistent tryRecord() wrapping and error recording",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-20T21:55:49Z",
+        "updatedAt": "2026-02-21T03:33:29Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:33:29Z",
+        "additions": 2170,
+        "deletions": 543,
+        "changedFiles": 92,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35836",
+        "url": "https://github.com/facebook/react/pull/35836"
+      },
+      {
+        "number": 35835,
+        "title": "[compiler] Add fault tolerance test fixtures",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-20T21:55:48Z",
+        "updatedAt": "2026-02-21T03:33:36Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:33:36Z",
+        "additions": 2138,
+        "deletions": 536,
+        "changedFiles": 92,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35835",
+        "url": "https://github.com/facebook/react/pull/35835"
+      },
+      {
+        "number": 35834,
+        "title": "[compiler] Phase 3: Make lower() always produce HIRFunction",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-20T21:55:46Z",
+        "updatedAt": "2026-02-21T03:33:47Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:33:47Z",
+        "additions": 1700,
+        "deletions": 536,
+        "changedFiles": 82,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35834",
+        "url": "https://github.com/facebook/react/pull/35834"
+      },
+      {
+        "number": 35833,
+        "title": "[compiler] Phase 8: Add multi-error test fixture and update plan",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-20T21:55:44Z",
+        "updatedAt": "2026-02-21T03:33:52Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:33:52Z",
+        "additions": 1525,
+        "deletions": 304,
+        "changedFiles": 73,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35833",
+        "url": "https://github.com/facebook/react/pull/35833"
+      },
+      {
+        "number": 35832,
+        "title": "[compiler] Phase 4 (batch 2), 5, 6: Update remaining passes for fault tolerance",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-20T21:55:43Z",
+        "updatedAt": "2026-02-21T03:33:58Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:33:58Z",
+        "additions": 1446,
+        "deletions": 304,
+        "changedFiles": 71,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35832",
+        "url": "https://github.com/facebook/react/pull/35832"
+      },
+      {
+        "number": 35831,
+        "title": "[compiler] Phase 4 (batch 1): Update validation passes to record errors on env",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-20T21:55:41Z",
+        "updatedAt": "2026-02-21T03:34:06Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:34:06Z",
+        "additions": 1370,
+        "deletions": 229,
+        "changedFiles": 61,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35831",
+        "url": "https://github.com/facebook/react/pull/35831"
+      },
+      {
+        "number": 35830,
+        "title": "[compiler] Phase 2+7: Wrap pipeline passes in tryRecord for fault tolerance",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-20T21:55:40Z",
+        "updatedAt": "2026-02-21T03:34:12Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:34:12Z",
+        "additions": 1374,
+        "deletions": 169,
+        "changedFiles": 56,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35830",
+        "url": "https://github.com/facebook/react/pull/35830"
+      },
+      {
+        "number": 35829,
+        "title": "[compiler] Phase 1: Add error accumulation infrastructure to Environment",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-20T21:55:38Z",
+        "updatedAt": "2026-02-21T03:34:19Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:34:19Z",
+        "additions": 408,
+        "deletions": 1,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35829",
+        "url": "https://github.com/facebook/react/pull/35829"
+      },
+      {
+        "number": 35828,
+        "title": "[compiler] Add fault tolerance plan document",
+        "author": "josephsavona",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-20T21:55:37Z",
+        "updatedAt": "2026-02-21T03:34:24Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-21T03:34:24Z",
+        "additions": 320,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35828",
+        "url": "https://github.com/facebook/react/pull/35828"
+      },
+      {
+        "number": 35827,
+        "title": "[compiler] Remove fallback compilation pipeline dead code",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-20T20:48:45Z",
+        "updatedAt": "2026-02-23T16:54:50Z",
+        "mergedAt": "2026-02-23T16:54:50Z",
+        "closedAt": "2026-02-23T16:54:50Z",
+        "additions": 7,
+        "deletions": 198,
+        "changedFiles": 6,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "retry-pipeline-cleanup",
+        "url": "https://github.com/facebook/react/pull/35827"
+      },
+      {
+        "number": 35826,
+        "title": "Refs rule in object",
+        "author": "Liknox",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-20T02:26:01Z",
+        "updatedAt": "2026-02-20T02:26:55Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 70,
+        "deletions": 18,
+        "changedFiles": 4,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "refs-rule-in-object",
+        "url": "https://github.com/facebook/react/pull/35826"
+      },
+      {
+        "number": 35825,
+        "title": "[compiler] Feature flag cleanup",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-20T00:04:41Z",
+        "updatedAt": "2026-02-20T20:29:13Z",
+        "mergedAt": "2026-02-20T20:29:12Z",
+        "closedAt": "2026-02-20T20:29:12Z",
+        "additions": 88,
+        "deletions": 15255,
+        "changedFiles": 310,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "josephsavona",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-20T00:12:50Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "feature-flag-cleanup",
+        "url": "https://github.com/facebook/react/pull/35825"
+      },
+      {
+        "number": 35824,
+        "title": "Don't outline Suspense boundaries with suspensey CSS during shell flush",
+        "author": "gnoff",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-19T19:30:55Z",
+        "updatedAt": "2026-02-19T20:29:24Z",
+        "mergedAt": "2026-02-19T20:29:21Z",
+        "closedAt": "2026-02-19T20:29:21Z",
+        "additions": 216,
+        "deletions": 6,
+        "changedFiles": 6,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "eps1lon",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-19T19:37:19Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "disable-css-outlining-in-shell",
+        "url": "https://github.com/facebook/react/pull/35824"
+      },
+      {
+        "number": 35823,
+        "title": "[react-compiler-healthcheck] Add --verbose flag to list components that failed compilation",
+        "author": "sleitor",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-19T11:33:03Z",
+        "updatedAt": "2026-02-19T12:11:58Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-19T11:57:04Z",
+        "additions": 60,
+        "deletions": 2,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "feat/healthcheck-verbose",
+        "url": "https://github.com/facebook/react/pull/35823"
+      },
+      {
+        "number": 35822,
+        "title": "[eslint-plugin-react-hooks] Source version from package.json",
+        "author": "rhehfl",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-19T03:56:35Z",
+        "updatedAt": "2026-02-22T05:39:49Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 2,
+        "deletions": 2,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/eslint-plugin-dynamic-version",
+        "url": "https://github.com/facebook/react/pull/35822"
+      },
+      {
+        "number": 35820,
+        "title": "fix: clear correct timeout in attribute-behavior fixture",
+        "author": "sleitor",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-18T21:07:57Z",
+        "updatedAt": "2026-02-24T13:55:22Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/fixture-clearTimeout",
+        "url": "https://github.com/facebook/react/pull/35820"
+      },
+      {
+        "number": 35819,
+        "title": "[compiler] Fix false positive in refs rule for refs stored in objects",
+        "author": "apoorvdarshan",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-18T21:00:27Z",
+        "updatedAt": "2026-02-18T21:02:50Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 71,
+        "deletions": 16,
+        "changedFiles": 4,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix-refs-rule-false-positive",
+        "url": "https://github.com/facebook/react/pull/35819"
+      },
+      {
+        "number": 35817,
+        "title": "[DevTools] Fix alignment of breadcrumbs separator",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-18T18:13:56Z",
+        "updatedAt": "2026-02-18T18:53:49Z",
+        "mergedAt": "2026-02-18T18:53:49Z",
+        "closedAt": "2026-02-18T18:53:49Z",
+        "additions": 2,
+        "deletions": 0,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "hoxyq",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-18T18:44:15Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "sebbie/02-18-_devtools_fix_alignment_of_breadcrumbs_separator",
+        "url": "https://github.com/facebook/react/pull/35817"
+      },
+      {
+        "number": 35816,
+        "title": "[flags] land `enableTrustedTypesIntegration`",
+        "author": "rickhanlonii",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-18T17:42:19Z",
+        "updatedAt": "2026-02-25T19:49:42Z",
+        "mergedAt": "2026-02-25T19:49:31Z",
+        "closedAt": "2026-02-25T19:49:31Z",
+        "additions": 7,
+        "deletions": 9,
+        "changedFiles": 8,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "eps1lon",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-18T17:44:24Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "rh/ff-trusted-types",
+        "url": "https://github.com/facebook/react/pull/35816"
+      },
+      {
+        "number": 35815,
+        "title": "Fix: Clear correct timeout variable in componentWillUnmount",
+        "author": "AmitSingh-5600",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-18T16:37:29Z",
+        "updatedAt": "2026-02-18T17:19:58Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/attribute-behavior-timeout-cleanup",
+        "url": "https://github.com/facebook/react/pull/35815"
+      },
+      {
+        "number": 35812,
+        "title": "[compiler] Add --verbose flag to react-compiler-healthcheck",
+        "author": "apoorvdarshan",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-18T10:30:29Z",
+        "updatedAt": "2026-02-18T17:04:27Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-18T17:04:12Z",
+        "additions": 65,
+        "deletions": 2,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "healthcheck-verbose-flag",
+        "url": "https://github.com/facebook/react/pull/35812"
+      },
+      {
+        "number": 35811,
+        "title": "Bump pbkdf2 from 3.0.14 to 3.1.5 in /fixtures/packaging/brunch/dev",
+        "author": "app/dependabot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-18T02:16:27Z",
+        "updatedAt": "2026-02-18T21:29:41Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 234,
+        "deletions": 9,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed",
+          "dependencies",
+          "javascript"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "dependabot/npm_and_yarn/fixtures/packaging/brunch/dev/pbkdf2-3.1.5",
+        "url": "https://github.com/facebook/react/pull/35811"
+      },
+      {
+        "number": 35810,
+        "title": "[Flight] Add support for transporting `Error.cause`",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-17T23:31:06Z",
+        "updatedAt": "2026-02-19T23:50:49Z",
+        "mergedAt": "2026-02-19T23:50:34Z",
+        "closedAt": "2026-02-19T23:50:34Z",
+        "additions": 185,
+        "deletions": 18,
+        "changedFiles": 4,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "eps1lon",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-17T23:31:37Z"
+          },
+          {
+            "author": "eps1lon",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-19T23:41:39Z"
+          },
+          {
+            "author": "unstubbable",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-19T23:45:04Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "sebbie/02-17-_flight_add_support_for_transporting_error.cause_",
+        "url": "https://github.com/facebook/react/pull/35810"
+      },
+      {
+        "number": 35809,
+        "title": "Bump pbkdf2 from 3.1.2 to 3.1.5 in /fixtures/concurrent/time-slicing",
+        "author": "app/dependabot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-17T16:42:21Z",
+        "updatedAt": "2026-02-18T21:29:46Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 256,
+        "deletions": 10,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed",
+          "dependencies",
+          "javascript"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "dependabot/npm_and_yarn/fixtures/concurrent/time-slicing/pbkdf2-3.1.5",
+        "url": "https://github.com/facebook/react/pull/35809"
+      },
+      {
+        "number": 35808,
+        "title": "docs: update contributing guide link",
+        "author": "pavan-sh",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-17T14:02:53Z",
+        "updatedAt": "2026-02-19T06:29:38Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "docs/fix-contributing-link",
+        "url": "https://github.com/facebook/react/pull/35808"
+      },
+      {
+        "number": 35807,
+        "title": "fix(compiler, rsc): implement $makeReadOnly and add security validation limits | Critical security fix",
+        "author": "dill-lk",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-17T10:37:37Z",
+        "updatedAt": "2026-02-18T07:02:31Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-18T07:02:31Z",
+        "additions": 478,
+        "deletions": 6,
+        "changedFiles": 6,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "critical-security-fix",
+        "url": "https://github.com/facebook/react/pull/35807"
+      },
+      {
+        "number": 35806,
+        "title": "fix: correct malformed private field type in multiple package.json files",
+        "author": "dill-lk",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-17T09:41:16Z",
+        "updatedAt": "2026-02-17T09:45:25Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-17T09:45:17Z",
+        "additions": 3,
+        "deletions": 3,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/package-json-private-metadata",
+        "url": "https://github.com/facebook/react/pull/35806"
+      },
+      {
+        "number": 35805,
+        "title": "Implement $makeReadOnly and TestRecommendedRules runtime functions",
+        "author": "dill-lk",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-17T08:38:14Z",
+        "updatedAt": "2026-02-18T05:14:22Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-18T05:14:22Z",
+        "additions": 63,
+        "deletions": 5,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "main",
+        "url": "https://github.com/facebook/react/pull/35805"
+      },
+      {
+        "number": 35804,
+        "title": "Implement $makeReadOnly and TestRecommendedRules runtime functions",
+        "author": "dill-lk",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-17T08:32:21Z",
+        "updatedAt": "2026-02-17T08:37:03Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-17T08:37:03Z",
+        "additions": 591,
+        "deletions": 5,
+        "changedFiles": 4,
+        "labels": [],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "main",
+        "url": "https://github.com/facebook/react/pull/35804"
+      },
+      {
+        "number": 35803,
+        "title": "eslint-plugin-react-hooks: allow ref-guarded setState in effects",
+        "author": "saurabhchopade",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-16T19:10:24Z",
+        "updatedAt": "2026-02-18T18:47:50Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-18T18:47:50Z",
+        "additions": 59,
+        "deletions": 0,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [
+          {
+            "author": "josephsavona",
+            "state": "CHANGES_REQUESTED",
+            "submittedAt": "2026-02-16T21:11:23Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix-34858-set-state-in-effect-ref-guard",
+        "url": "https://github.com/facebook/react/pull/35803"
+      },
+      {
+        "number": 35802,
+        "title": "Fix malformed private field in package.json files",
+        "author": "Pantkartik",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-16T18:36:01Z",
+        "updatedAt": "2026-02-17T09:53:10Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 5,
+        "deletions": 5,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/malformed-private-field-fusebox",
+        "url": "https://github.com/facebook/react/pull/35802"
+      },
+      {
+        "number": 35801,
+        "title": "[react-server][dev] Clean up pendingOperations on request close to prevent dev memory leak",
+        "author": "alubbe",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-16T14:31:45Z",
+        "updatedAt": "2026-02-20T11:44:02Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 165,
+        "deletions": 6,
+        "changedFiles": 3,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "dev-mem-leak",
+        "url": "https://github.com/facebook/react/pull/35801"
+      },
+      {
+        "number": 35800,
+        "title": "Add WebMCP package with hooks, components, and fixtures",
+        "author": "tech-sumit",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-16T13:40:38Z",
+        "updatedAt": "2026-02-16T22:48:57Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-16T22:48:14Z",
+        "additions": 906,
+        "deletions": 0,
+        "changedFiles": 15,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "feature/webmcp-chrome-146",
+        "url": "https://github.com/facebook/react/pull/35800"
+      },
+      {
+        "number": 35797,
+        "title": "测试commit",
+        "author": "kzk9523",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-16T03:22:51Z",
+        "updatedAt": "2026-02-16T04:11:35Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-16T04:11:26Z",
+        "additions": 2,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "fix/one",
+        "url": "https://github.com/facebook/react/pull/35797"
+      },
+      {
+        "number": 35796,
+        "title": "fix: set private field to boolean in devtools fusebox package",
+        "author": "Arktomson",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-16T02:39:43Z",
+        "updatedAt": "2026-02-16T02:39:50Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "CLA Signed"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "codex/issue-35793-private-boolean",
+        "url": "https://github.com/facebook/react/pull/35796"
+      },
+      {
+        "number": 35795,
+        "title": "[Flight] Skip `transferReferencedDebugInfo` during debug info resolution",
+        "author": "unstubbable",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-16T00:35:49Z",
+        "updatedAt": "2026-02-16T17:22:42Z",
+        "mergedAt": "2026-02-16T17:22:32Z",
+        "closedAt": "2026-02-16T17:22:32Z",
+        "additions": 77,
+        "deletions": 19,
+        "changedFiles": 2,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "gnoff",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-16T13:43:36Z"
+          },
+          {
+            "author": "unstubbable",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-16T14:25:35Z"
+          },
+          {
+            "author": "gnoff",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-16T17:20:41Z"
+          },
+          {
+            "author": "unstubbable",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-16T17:21:37Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "debug-chunks-oom",
+        "url": "https://github.com/facebook/react/pull/35795"
+      },
+      {
+        "number": 35794,
+        "title": "[compiler] Track locations for dependencies",
+        "author": "josephsavona",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-16T00:02:53Z",
+        "updatedAt": "2026-02-17T22:06:21Z",
+        "mergedAt": "2026-02-17T22:06:21Z",
+        "closedAt": "2026-02-17T22:06:21Z",
+        "additions": 194,
+        "deletions": 24,
+        "changedFiles": 11,
+        "labels": [
+          "CLA Signed",
+          "React Core Team"
+        ],
+        "reviews": [
+          {
+            "author": "mvitousek",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-17T20:23:49Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "main",
+        "headBranch": "pr35794",
+        "url": "https://github.com/facebook/react/pull/35794"
+      }
+    ],
+    "vercel/next.js": [
+      {
+        "number": 90580,
+        "title": "feat: add llms.txt metadata route support",
+        "author": "gusfune",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T10:20:00Z",
+        "updatedAt": "2026-02-26T10:40:58Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 394,
+        "deletions": 6,
+        "changedFiles": 16,
+        "labels": [
+          "type: next",
+          "Documentation",
+          "Turbopack",
+          "tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "gusfune/llmstxt",
+        "url": "https://github.com/vercel/next.js/pull/90580"
+      },
+      {
+        "number": 90578,
+        "title": "Replace `testonly` to `testheadless` in AGENTS.md",
+        "author": "devjiwonchoi",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-26T09:50:00Z",
+        "updatedAt": "2026-02-26T10:52:00Z",
+        "mergedAt": "2026-02-26T10:51:59Z",
+        "closedAt": "2026-02-26T10:51:59Z",
+        "additions": 4,
+        "deletions": 3,
+        "changedFiles": 1,
+        "labels": [
+          "created-by: Next.js team"
+        ],
+        "reviews": [
+          {
+            "author": "devjiwonchoi",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T10:00:46Z"
+          },
+          {
+            "author": "devjiwonchoi",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T10:01:45Z"
+          },
+          {
+            "author": "eps1lon",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-26T10:44:03Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "devjiwonchoi/explore-agent-config",
+        "url": "https://github.com/vercel/next.js/pull/90578"
+      },
+      {
+        "number": 90577,
+        "title": "[devtools] Stop sending codeframes for ignored frames",
+        "author": "eps1lon",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T09:07:08Z",
+        "updatedAt": "2026-02-26T11:22:38Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 82,
+        "deletions": 22,
+        "changedFiles": 5,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sebbie/02-26-_devtools_stop_sending_codeframes_for_ignored_frames",
+        "url": "https://github.com/vercel/next.js/pull/90577"
+      },
+      {
+        "number": 90572,
+        "title": "docs: fix duplicated wording in cache components guide",
+        "author": "Rohan5commit",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-26T08:21:21Z",
+        "updatedAt": "2026-02-26T08:29:38Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-26T08:29:38Z",
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "Documentation"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "docs/fix-duplicate-word-cli",
+        "url": "https://github.com/vercel/next.js/pull/90572"
+      },
+      {
+        "number": 90571,
+        "title": "[test] Remove `getStackFramesContent`",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-26T08:05:00Z",
+        "updatedAt": "2026-02-26T09:39:53Z",
+        "mergedAt": "2026-02-26T09:39:52Z",
+        "closedAt": "2026-02-26T09:39:52Z",
+        "additions": 89,
+        "deletions": 80,
+        "changedFiles": 4,
+        "labels": [
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "unstubbable",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-26T09:35:49Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sebbie/02-26-_test_remove_getstackframescontent_",
+        "url": "https://github.com/vercel/next.js/pull/90571"
+      },
+      {
+        "number": 90566,
+        "title": "Update Rspack development test manifest",
+        "author": "vercel-release-bot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T07:19:48Z",
+        "updatedAt": "2026-02-26T07:19:52Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 857,
+        "deletions": 62,
+        "changedFiles": 1,
+        "labels": [
+          "tests",
+          "run-react-18-tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/rspack-manifest-1772090380269",
+        "url": "https://github.com/vercel/next.js/pull/90566"
+      },
+      {
+        "number": 90565,
+        "title": "Update Rspack production test manifest",
+        "author": "vercel-release-bot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T07:19:45Z",
+        "updatedAt": "2026-02-26T07:39:01Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 109,
+        "deletions": 55,
+        "changedFiles": 1,
+        "labels": [
+          "tests",
+          "run-react-18-tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/rspack-manifest-1772090377873",
+        "url": "https://github.com/vercel/next.js/pull/90565"
+      },
+      {
+        "number": 90562,
+        "title": "[test] Deflake `typed-routes-validator`",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-26T07:08:19Z",
+        "updatedAt": "2026-02-26T08:24:07Z",
+        "mergedAt": "2026-02-26T08:24:04Z",
+        "closedAt": "2026-02-26T08:24:04Z",
+        "additions": 21,
+        "deletions": 20,
+        "changedFiles": 1,
+        "labels": [
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T07:11:22Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T07:24:13Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sebbie/02-26-_test_deflake_typed-routes-validator_",
+        "url": "https://github.com/vercel/next.js/pull/90562"
+      },
+      {
+        "number": 90561,
+        "title": "Turbopack server HMR: inline source maps for `eval`ed modules",
+        "author": "wbinnssmith",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T06:15:37Z",
+        "updatedAt": "2026-02-26T10:40:06Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 39,
+        "deletions": 7,
+        "changedFiles": 3,
+        "labels": [
+          "Turbopack",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T07:19:32Z"
+          },
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T07:23:22Z"
+          },
+          {
+            "author": "lukesandberg",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-26T07:23:37Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "server-hmr-default-implement-clear",
+        "headBranch": "server-hmr-sourcemaps",
+        "url": "https://github.com/vercel/next.js/pull/90561"
+      },
+      {
+        "number": 90556,
+        "title": "fix(css): rewrite MiniCssExtractPlugin insert function to ES5 to support legacy browsers",
+        "author": "sleitor",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T02:39:54Z",
+        "updatedAt": "2026-02-26T02:40:14Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 14,
+        "deletions": 3,
+        "changedFiles": 1,
+        "labels": [
+          "type: next"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "fix/css-insert-es5-compat",
+        "url": "https://github.com/vercel/next.js/pull/90556"
+      },
+      {
+        "number": 90555,
+        "title": "experimental.prefetchInlining: bundle segment prefetches into a single response",
+        "author": "acdlite",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T02:36:45Z",
+        "updatedAt": "2026-02-26T05:45:33Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 666,
+        "deletions": 40,
+        "changedFiles": 23,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "acdlite/prefetch-inline-option",
+        "url": "https://github.com/vercel/next.js/pull/90555"
+      },
+      {
+        "number": 90554,
+        "title": "fix: silence NoFallbackError in router-server outer catch",
+        "author": "sleitor",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T02:35:17Z",
+        "updatedAt": "2026-02-26T02:35:39Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 7,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "type: next"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "fix/no-fallback-error-console-log",
+        "url": "https://github.com/vercel/next.js/pull/90554"
+      },
+      {
+        "number": 90551,
+        "title": "CI/CD Security Test",
+        "author": "youssefelsaied3-cpu",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-26T00:40:44Z",
+        "updatedAt": "2026-02-26T00:41:51Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-26T00:41:51Z",
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "poc-security-test",
+        "url": "https://github.com/vercel/next.js/pull/90551"
+      },
+      {
+        "number": 90550,
+        "title": "Turbopack server hmr: Implement `restart` event",
+        "author": "wbinnssmith",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T00:32:08Z",
+        "updatedAt": "2026-02-26T06:19:41Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 63,
+        "deletions": 26,
+        "changedFiles": 5,
+        "labels": [
+          "type: next",
+          "Turbopack",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T03:05:19Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T03:17:53Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "server-hmr-default-implement-clear",
+        "url": "https://github.com/vercel/next.js/pull/90550"
+      },
+      {
+        "number": 90548,
+        "title": "Update font data",
+        "author": "vercel-release-bot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-26T00:18:51Z",
+        "updatedAt": "2026-02-26T00:37:20Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 220,
+        "deletions": 0,
+        "changedFiles": 2,
+        "labels": [
+          "type: next",
+          "Font (next/font)",
+          "run-react-18-tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/fonts-data-1772065119174",
+        "url": "https://github.com/vercel/next.js/pull/90548"
+      },
+      {
+        "number": 90545,
+        "title": "Turbopack: Add Next.js version to \"initialize project\" trace span",
+        "author": "sokra",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T23:16:39Z",
+        "updatedAt": "2026-02-26T09:58:26Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 27,
+        "deletions": 10,
+        "changedFiles": 11,
+        "labels": [
+          "type: next",
+          "Turbopack",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "sokra",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T23:18:14Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-26T09:58:26Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sokra/version-in-trace",
+        "url": "https://github.com/vercel/next.js/pull/90545"
+      },
+      {
+        "number": 90543,
+        "title": "Turbopack: Move turbopack out of `pnpm build` and into a `pnpm build-all` command",
+        "author": "bgw",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T22:05:37Z",
+        "updatedAt": "2026-02-25T23:16:21Z",
+        "mergedAt": "2026-02-25T23:16:19Z",
+        "closedAt": "2026-02-25T23:16:19Z",
+        "additions": 45,
+        "deletions": 38,
+        "changedFiles": 4,
+        "labels": [],
+        "reviews": [
+          {
+            "author": "bgw",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T22:19:04Z"
+          },
+          {
+            "author": "wbinnssmith",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T22:21:13Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "bgw/build-all-script",
+        "url": "https://github.com/vercel/next.js/pull/90543"
+      },
+      {
+        "number": 90542,
+        "title": "turbo-persistence: SST write path I/O and allocation optimizations",
+        "author": "lukesandberg",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T21:35:48Z",
+        "updatedAt": "2026-02-26T00:15:52Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 45,
+        "deletions": 28,
+        "changedFiles": 3,
+        "labels": [
+          "Turbopack",
+          "created-by: Turbopack team"
+        ],
+        "reviews": [
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T21:59:41Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sst_writer_buffers",
+        "url": "https://github.com/vercel/next.js/pull/90542"
+      },
+      {
+        "number": 90541,
+        "title": "Remove unused return values from getPageStaticInfo",
+        "author": "mischnic",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T20:54:05Z",
+        "updatedAt": "2026-02-26T10:27:09Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 28,
+        "deletions": 67,
+        "changedFiles": 4,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/cleanup-getPagesPageStaticInfo",
+        "url": "https://github.com/vercel/next.js/pull/90541"
+      },
+      {
+        "number": 90533,
+        "title": "Fix: server-patch retry preserves push/replace intent of suspended transitions",
+        "author": "acdlite",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T18:38:38Z",
+        "updatedAt": "2026-02-25T21:22:49Z",
+        "mergedAt": "2026-02-25T21:22:49Z",
+        "closedAt": "2026-02-25T21:22:49Z",
+        "additions": 148,
+        "deletions": 10,
+        "changedFiles": 10,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "ztanner",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T21:19:23Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "acdlite/fix-server-patch-navigate-type",
+        "url": "https://github.com/vercel/next.js/pull/90533"
+      },
+      {
+        "number": 90531,
+        "title": "Remove revalidation settling period from router-act",
+        "author": "acdlite",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T17:59:00Z",
+        "updatedAt": "2026-02-25T23:36:04Z",
+        "mergedAt": "2026-02-25T23:36:04Z",
+        "closedAt": "2026-02-25T23:36:04Z",
+        "additions": 62,
+        "deletions": 51,
+        "changedFiles": 2,
+        "labels": [
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "unstubbable",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T21:09:57Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "acdlite/remove-settling-period",
+        "url": "https://github.com/vercel/next.js/pull/90531"
+      },
+      {
+        "number": 90530,
+        "title": "Bump Turborepo to 2.8.11",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T17:07:37Z",
+        "updatedAt": "2026-02-25T22:28:41Z",
+        "mergedAt": "2026-02-25T22:28:38Z",
+        "closedAt": "2026-02-25T22:28:38Z",
+        "additions": 36,
+        "deletions": 36,
+        "changedFiles": 8,
+        "labels": [
+          "created-by: Turbopack team"
+        ],
+        "reviews": [
+          {
+            "author": "lukesandberg",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T18:39:49Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T20:19:37Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/turborepo-2-8-11",
+        "url": "https://github.com/vercel/next.js/pull/90530"
+      },
+      {
+        "number": 90529,
+        "title": "Upgrade React from `c0060cf2-20260224` to `e33071c6-20260224`",
+        "author": "nextjs-bot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T16:43:51Z",
+        "updatedAt": "2026-02-25T17:03:05Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 1072,
+        "deletions": 1072,
+        "changedFiles": 62,
+        "labels": [
+          "type: next",
+          "CI approved",
+          "type: react-sync"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/react/19.3.0-canary-e33071c6-20260224",
+        "url": "https://github.com/vercel/next.js/pull/90529"
+      },
+      {
+        "number": 90526,
+        "title": "Turbopack: Add TransientEnvMap to avoid persisting env vars in cache",
+        "author": "sokra",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T15:05:20Z",
+        "updatedAt": "2026-02-25T22:14:23Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 42,
+        "deletions": 27,
+        "changedFiles": 7,
+        "labels": [
+          "Turbopack",
+          "created-by: Turbopack team"
+        ],
+        "reviews": [
+          {
+            "author": "mischnic",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T16:19:36Z"
+          },
+          {
+            "author": "sokra",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T19:35:01Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sokra/env-in-cache",
+        "url": "https://github.com/vercel/next.js/pull/90526"
+      },
+      {
+        "number": 90525,
+        "title": "Revert \"Turbopack: Add line numbers to debug info in release-with-assertions profile (#90474)\"",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T14:59:07Z",
+        "updatedAt": "2026-02-25T15:58:19Z",
+        "mergedAt": "2026-02-25T15:46:21Z",
+        "closedAt": "2026-02-25T15:46:21Z",
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "created-by: Turbopack team"
+        ],
+        "reviews": [
+          {
+            "author": "lukesandberg",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T15:45:48Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/revert-782f16621d",
+        "url": "https://github.com/vercel/next.js/pull/90525"
+      },
+      {
+        "number": 90514,
+        "title": "Conditionally load uncommon paths",
+        "author": "timneutkens",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T12:55:22Z",
+        "updatedAt": "2026-02-26T11:14:39Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 226,
+        "deletions": 197,
+        "changedFiles": 27,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T13:01:54Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T13:10:55Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T10:44:59Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T10:45:38Z"
+          },
+          {
+            "author": "timneutkens",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T11:14:39Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "02-25-conditionally_load_uncommon_paths",
+        "url": "https://github.com/vercel/next.js/pull/90514"
+      },
+      {
+        "number": 90512,
+        "title": "Replace mark_root() with #[turbo_tasks::function(root)] flag",
+        "author": "sokra",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T12:44:32Z",
+        "updatedAt": "2026-02-26T07:24:07Z",
+        "mergedAt": "2026-02-26T07:24:05Z",
+        "closedAt": "2026-02-26T07:24:05Z",
+        "additions": 64,
+        "deletions": 62,
+        "changedFiles": 13,
+        "labels": [
+          "Turbopack",
+          "created-by: Turbopack team"
+        ],
+        "reviews": [
+          {
+            "author": "lukesandberg",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-26T00:17:53Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sokra/root-attribute",
+        "url": "https://github.com/vercel/next.js/pull/90512"
+      },
+      {
+        "number": 90510,
+        "title": "Refactor extractExportedConstValue to return { value } | null instead of throwing",
+        "author": "sokra",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T11:47:44Z",
+        "updatedAt": "2026-02-26T09:06:01Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 90,
+        "deletions": 101,
+        "changedFiles": 2,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sokra/avoid-throw",
+        "url": "https://github.com/vercel/next.js/pull/90510"
+      },
+      {
+        "number": 90508,
+        "title": "Add EdgeOne Pages deployment link",
+        "author": "BLUE-YBZ",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-25T11:41:05Z",
+        "updatedAt": "2026-02-25T11:43:08Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-25T11:42:29Z",
+        "additions": 2347741,
+        "deletions": 730715,
+        "changedFiles": 26677,
+        "labels": [],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "patch-1",
+        "headBranch": "patch-1",
+        "url": "https://github.com/vercel/next.js/pull/90508"
+      },
+      {
+        "number": 90506,
+        "title": "fix: sanitize worker args for worker_threads compatibility",
+        "author": "timneutkens",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T11:14:44Z",
+        "updatedAt": "2026-02-25T12:13:53Z",
+        "mergedAt": "2026-02-25T12:13:50Z",
+        "closedAt": "2026-02-25T12:13:50Z",
+        "additions": 13,
+        "deletions": 3,
+        "changedFiles": 1,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team"
+        ],
+        "reviews": [
+          {
+            "author": "mischnic",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T11:19:08Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "02-25-fix-worker-threads-datacloneerror",
+        "url": "https://github.com/vercel/next.js/pull/90506"
+      },
+      {
+        "number": 90504,
+        "title": "Don't start worker for Typescript when only doing config validation",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T11:00:18Z",
+        "updatedAt": "2026-02-25T17:00:35Z",
+        "mergedAt": "2026-02-25T17:00:31Z",
+        "closedAt": "2026-02-25T17:00:31Z",
+        "additions": 58,
+        "deletions": 46,
+        "changedFiles": 5,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T11:04:05Z"
+          },
+          {
+            "author": "timneutkens",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T11:04:29Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T11:07:14Z"
+          },
+          {
+            "author": "timneutkens",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T11:10:13Z"
+          },
+          {
+            "author": "timneutkens",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T16:21:04Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/speedup-verify-ts",
+        "url": "https://github.com/vercel/next.js/pull/90504"
+      },
+      {
+        "number": 90503,
+        "title": "[test] Fix flaky \"delay re-prefetch after revalidation\" test",
+        "author": "unstubbable",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T10:41:02Z",
+        "updatedAt": "2026-02-25T13:09:21Z",
+        "mergedAt": "2026-02-25T13:09:19Z",
+        "closedAt": "2026-02-25T13:09:19Z",
+        "additions": 31,
+        "deletions": 8,
+        "changedFiles": 1,
+        "labels": [
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "devjiwonchoi",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T11:21:34Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "hl/fix-flaky-prefetch-delay-test",
+        "url": "https://github.com/vercel/next.js/pull/90503"
+      },
+      {
+        "number": 90499,
+        "title": "Add EdgeOne Pages deployment link",
+        "author": "BLUE-YBZ",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-25T09:37:25Z",
+        "updatedAt": "2026-02-25T11:35:35Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-25T11:35:35Z",
+        "additions": 562,
+        "deletions": 0,
+        "changedFiles": 2,
+        "labels": [
+          "Documentation"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "patch-1",
+        "url": "https://github.com/vercel/next.js/pull/90499"
+      },
+      {
+        "number": 90497,
+        "title": "[test] Include error code in Redbox snapshot",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T09:12:29Z",
+        "updatedAt": "2026-02-26T11:01:27Z",
+        "mergedAt": "2026-02-26T11:01:25Z",
+        "closedAt": "2026-02-26T11:01:25Z",
+        "additions": 309,
+        "deletions": 135,
+        "changedFiles": 34,
+        "labels": [
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T07:12:26Z"
+          },
+          {
+            "author": "unstubbable",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-26T09:38:16Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sebbie/02-25-_test_include_error_code_in_redbox_snapshot",
+        "url": "https://github.com/vercel/next.js/pull/90497"
+      },
+      {
+        "number": 90496,
+        "title": "Fix varyParams tracking for optional catch-all params with no value",
+        "author": "acdlite",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T07:48:34Z",
+        "updatedAt": "2026-02-25T13:07:19Z",
+        "mergedAt": "2026-02-25T13:07:18Z",
+        "closedAt": "2026-02-25T13:07:19Z",
+        "additions": 355,
+        "deletions": 3,
+        "changedFiles": 13,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "unstubbable",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T08:53:24Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "acdlite/vary-params-optional-catchall",
+        "url": "https://github.com/vercel/next.js/pull/90496"
+      },
+      {
+        "number": 90495,
+        "title": "Update Rspack production test manifest",
+        "author": "vercel-release-bot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T07:20:07Z",
+        "updatedAt": "2026-02-25T17:55:49Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 81,
+        "deletions": 58,
+        "changedFiles": 1,
+        "labels": [
+          "tests",
+          "run-react-18-tests"
+        ],
+        "reviews": [
+          {
+            "author": "bgw",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T17:44:21Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/rspack-manifest-1772003998297",
+        "url": "https://github.com/vercel/next.js/pull/90495"
+      },
+      {
+        "number": 90494,
+        "title": "Update Rspack development test manifest",
+        "author": "vercel-release-bot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T07:20:07Z",
+        "updatedAt": "2026-02-25T17:53:11Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 822,
+        "deletions": 53,
+        "changedFiles": 1,
+        "labels": [
+          "tests",
+          "run-react-18-tests"
+        ],
+        "reviews": [
+          {
+            "author": "bgw",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T17:44:06Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/rspack-manifest-1772004000487",
+        "url": "https://github.com/vercel/next.js/pull/90494"
+      },
+      {
+        "number": 90477,
+        "title": "SRI turbopack documentation",
+        "author": "richardjzhang",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T02:03:55Z",
+        "updatedAt": "2026-02-25T02:07:27Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "Documentation"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "cursor/sri-turbopack-documentation-4fc6",
+        "url": "https://github.com/vercel/next.js/pull/90477"
+      },
+      {
+        "number": 90475,
+        "title": "Limit build workers to pages+1",
+        "author": "andrewimm",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T01:38:17Z",
+        "updatedAt": "2026-02-25T10:32:59Z",
+        "mergedAt": "2026-02-25T10:32:58Z",
+        "closedAt": "2026-02-25T10:32:58Z",
+        "additions": 19,
+        "deletions": 11,
+        "changedFiles": 1,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team"
+        ],
+        "reviews": [
+          {
+            "author": "timneutkens",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T10:05:35Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "andrewimm/limit-workers",
+        "url": "https://github.com/vercel/next.js/pull/90475"
+      },
+      {
+        "number": 90474,
+        "title": "Turbopack: Add line numbers to debug info in release-with-assertions profile",
+        "author": "bgw",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T01:19:21Z",
+        "updatedAt": "2026-02-25T09:14:49Z",
+        "mergedAt": "2026-02-25T09:14:46Z",
+        "closedAt": "2026-02-25T09:14:46Z",
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [],
+        "reviews": [
+          {
+            "author": "mischnic",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T09:11:54Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "bgw/ci-release-debug-line-tables",
+        "url": "https://github.com/vercel/next.js/pull/90474"
+      },
+      {
+        "number": 90473,
+        "title": "Update font data",
+        "author": "vercel-release-bot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T00:22:13Z",
+        "updatedAt": "2026-02-25T00:42:24Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 220,
+        "deletions": 0,
+        "changedFiles": 2,
+        "labels": [
+          "run-react-18-tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/fonts-data-1771978920586",
+        "url": "https://github.com/vercel/next.js/pull/90473"
+      },
+      {
+        "number": 90471,
+        "title": "[backport]: ensure maxPostponedStateSize is always respected (#90060)",
+        "author": "ztanner",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T00:13:23Z",
+        "updatedAt": "2026-02-25T05:58:02Z",
+        "mergedAt": "2026-02-25T05:58:00Z",
+        "closedAt": "2026-02-25T05:58:00Z",
+        "additions": 135,
+        "deletions": 34,
+        "changedFiles": 7,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "ijjk",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T00:15:06Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "next-16-1",
+        "headBranch": "ztanner/backport-90060",
+        "url": "https://github.com/vercel/next.js/pull/90471"
+      },
+      {
+        "number": 90470,
+        "title": "Add @next/playwright package with instant() testing helper",
+        "author": "acdlite",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-25T00:07:32Z",
+        "updatedAt": "2026-02-25T02:27:19Z",
+        "mergedAt": "2026-02-25T02:27:19Z",
+        "closedAt": "2026-02-25T02:27:19Z",
+        "additions": 305,
+        "deletions": 48,
+        "changedFiles": 7,
+        "labels": [
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "samselikoff",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T02:27:07Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "acdlite/next-playwright",
+        "url": "https://github.com/vercel/next.js/pull/90470"
+      },
+      {
+        "number": 90469,
+        "title": "Update default error pages",
+        "author": "mitul-s",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-25T00:02:48Z",
+        "updatedAt": "2026-02-25T19:43:04Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 128,
+        "deletions": 106,
+        "changedFiles": 13,
+        "labels": [
+          "type: next",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "chatgpt-codex-connector[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T00:08:11Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "ms/error-page",
+        "url": "https://github.com/vercel/next.js/pull/90469"
+      },
+      {
+        "number": 90466,
+        "title": "Turbopack: emit env_diff span attribute for update",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T22:26:24Z",
+        "updatedAt": "2026-02-25T09:22:17Z",
+        "mergedAt": "2026-02-25T09:22:15Z",
+        "closedAt": "2026-02-25T09:22:15Z",
+        "additions": 121,
+        "deletions": 105,
+        "changedFiles": 1,
+        "labels": [
+          "Turbopack",
+          "created-by: Turbopack team"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T22:30:20Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T22:39:08Z"
+          },
+          {
+            "author": "sokra",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T07:50:11Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/env-diff-update",
+        "url": "https://github.com/vercel/next.js/pull/90466"
+      },
+      {
+        "number": 90465,
+        "title": "test: unflake lru-disk-eviction on Windows",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T22:22:19Z",
+        "updatedAt": "2026-02-25T09:34:24Z",
+        "mergedAt": "2026-02-25T09:34:21Z",
+        "closedAt": "2026-02-25T09:34:21Z",
+        "additions": 12,
+        "deletions": 2,
+        "changedFiles": 1,
+        "labels": [
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "bgw",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T22:24:06Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/lru-test-windows",
+        "url": "https://github.com/vercel/next.js/pull/90465"
+      },
+      {
+        "number": 90464,
+        "title": "[test] Only auto-retry individual e2e tests in CI",
+        "author": "unstubbable",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T21:55:05Z",
+        "updatedAt": "2026-02-24T22:31:36Z",
+        "mergedAt": "2026-02-24T22:31:34Z",
+        "closedAt": "2026-02-24T22:31:34Z",
+        "additions": 3,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "ijjk",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T22:00:27Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "hl/no-local-auto-retry",
+        "url": "https://github.com/vercel/next.js/pull/90464"
+      },
+      {
+        "number": 90463,
+        "title": "test: Improve test assertions to prepare for dpl query string",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T21:47:07Z",
+        "updatedAt": "2026-02-25T11:16:13Z",
+        "mergedAt": "2026-02-25T11:16:10Z",
+        "closedAt": "2026-02-25T11:16:10Z",
+        "additions": 202,
+        "deletions": 221,
+        "changedFiles": 34,
+        "labels": [
+          "Font (next/font)",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T22:04:03Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T22:09:23Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T22:09:25Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T22:09:27Z"
+          },
+          {
+            "author": "bgw",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T23:01:48Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-25T09:24:22Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/improve-tests",
+        "url": "https://github.com/vercel/next.js/pull/90463"
+      },
+      {
+        "number": 90455,
+        "title": "Fix params leaking into instant navigation shell in dev",
+        "author": "acdlite",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T18:03:31Z",
+        "updatedAt": "2026-02-25T02:05:24Z",
+        "mergedAt": "2026-02-25T02:05:24Z",
+        "closedAt": "2026-02-25T02:05:24Z",
+        "additions": 335,
+        "deletions": 9,
+        "changedFiles": 7,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "devjiwonchoi",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T20:37:23Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "acdlite/test-runtime-data-instant-shell",
+        "url": "https://github.com/vercel/next.js/pull/90455"
+      },
+      {
+        "number": 90454,
+        "title": "test: Cleanup and refactoring",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T17:19:58Z",
+        "updatedAt": "2026-02-24T19:03:47Z",
+        "mergedAt": "2026-02-24T19:03:44Z",
+        "closedAt": "2026-02-24T19:03:44Z",
+        "additions": 90,
+        "deletions": 152,
+        "changedFiles": 6,
+        "labels": [
+          "created-by: Turbopack team",
+          "tests",
+          "Rspack"
+        ],
+        "reviews": [
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T17:23:40Z"
+          },
+          {
+            "author": "eps1lon",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T18:50:17Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/cleanup-tests",
+        "url": "https://github.com/vercel/next.js/pull/90454"
+      },
+      {
+        "number": 90452,
+        "title": "Upgrade React from `ab18f33d-20260220` to `c0060cf2-20260224`",
+        "author": "nextjs-bot",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T16:43:47Z",
+        "updatedAt": "2026-02-24T17:21:12Z",
+        "mergedAt": "2026-02-24T17:21:11Z",
+        "closedAt": "2026-02-24T17:21:11Z",
+        "additions": 1072,
+        "deletions": 1107,
+        "changedFiles": 62,
+        "labels": [
+          "type: next",
+          "CI approved",
+          "type: react-sync"
+        ],
+        "reviews": [
+          {
+            "author": "eps1lon",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T16:55:01Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/react/19.3.0-canary-c0060cf2-20260224",
+        "url": "https://github.com/vercel/next.js/pull/90452"
+      },
+      {
+        "number": 90451,
+        "title": "[test] Deflake `typed-routes-validator` using `tsc`",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T16:40:35Z",
+        "updatedAt": "2026-02-26T07:09:41Z",
+        "mergedAt": "2026-02-24T18:02:34Z",
+        "closedAt": "2026-02-24T18:02:35Z",
+        "additions": 16,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "created-by: Next.js team",
+          "CI approved",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "mischnic",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T17:40:25Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "cursor/next-env-d-ts-generation-wait-0281",
+        "url": "https://github.com/vercel/next.js/pull/90451"
+      },
+      {
+        "number": 90450,
+        "title": "Uncached data suspense issue",
+        "author": "icyJoseph",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T16:19:41Z",
+        "updatedAt": "2026-02-24T19:07:43Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 26,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "Documentation",
+          "created-by: Next.js DevEx team"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "cursor/uncached-data-suspense-issue-21d7",
+        "url": "https://github.com/vercel/next.js/pull/90450"
+      },
+      {
+        "number": 90449,
+        "title": "[ci] Stop using Turbopack tests in native binary build cache keys",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T16:18:52Z",
+        "updatedAt": "2026-02-24T18:18:36Z",
+        "mergedAt": "2026-02-24T18:18:35Z",
+        "closedAt": "2026-02-24T18:18:35Z",
+        "additions": 9,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "CI approved"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T16:23:42Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T16:30:18Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T17:39:58Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "cursor/turbopack-tests-input-exclusion-c90d",
+        "url": "https://github.com/vercel/next.js/pull/90449"
+      },
+      {
+        "number": 90442,
+        "title": "[ci] Fix input cache keys for tasks referencing `rust-toolchain`",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T15:19:05Z",
+        "updatedAt": "2026-02-25T04:37:51Z",
+        "mergedAt": "2026-02-24T16:14:01Z",
+        "closedAt": "2026-02-24T16:14:01Z",
+        "additions": 14,
+        "deletions": 13,
+        "changedFiles": 2,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "claude-code-assisted"
+        ],
+        "reviews": [
+          {
+            "author": "mischnic",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T15:27:30Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sebbie/02-24-_ci_fix_input_cache_keys_for_tasks_referencing_rust-toolchain_",
+        "url": "https://github.com/vercel/next.js/pull/90442"
+      },
+      {
+        "number": 90441,
+        "title": "[ci] Always upload Turborepo summary artifact",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T14:59:22Z",
+        "updatedAt": "2026-02-24T15:23:10Z",
+        "mergedAt": "2026-02-24T15:16:57Z",
+        "closedAt": "2026-02-24T15:16:57Z",
+        "additions": 2,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "created-by: Next.js team"
+        ],
+        "reviews": [
+          {
+            "author": "mischnic",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T15:01:16Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sebbie/02-24-_ci_always_upload_turborepo_summary_artifact",
+        "url": "https://github.com/vercel/next.js/pull/90441"
+      },
+      {
+        "number": 90435,
+        "title": "docs: clarify that next upgrade is for 16.1.x+",
+        "author": "icyJoseph",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T14:01:13Z",
+        "updatedAt": "2026-02-24T16:50:06Z",
+        "mergedAt": "2026-02-24T16:50:03Z",
+        "closedAt": "2026-02-24T16:50:03Z",
+        "additions": 2,
+        "deletions": 1,
+        "changedFiles": 2,
+        "labels": [
+          "Documentation",
+          "created-by: Next.js DevEx team"
+        ],
+        "reviews": [
+          {
+            "author": "ismaelrumzan",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T15:32:22Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "chore/next-upgrade-history",
+        "url": "https://github.com/vercel/next.js/pull/90435"
+      },
+      {
+        "number": 90430,
+        "title": "Fix `config.reactProductionProfiling` for Webpack",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T13:10:17Z",
+        "updatedAt": "2026-02-24T15:11:45Z",
+        "mergedAt": "2026-02-24T15:11:41Z",
+        "closedAt": "2026-02-24T15:11:41Z",
+        "additions": 67,
+        "deletions": 78,
+        "changedFiles": 10,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "eps1lon",
+            "state": "CHANGES_REQUESTED",
+            "submittedAt": "2026-02-24T14:05:33Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T14:08:55Z"
+          },
+          {
+            "author": "eps1lon",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T14:10:02Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/migrate-profiler-test",
+        "url": "https://github.com/vercel/next.js/pull/90430"
+      },
+      {
+        "number": 90428,
+        "title": "test: add cache DCE guard test",
+        "author": "timneutkens",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T12:43:56Z",
+        "updatedAt": "2026-02-24T13:03:58Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 73,
+        "deletions": 0,
+        "changedFiles": 4,
+        "labels": [
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T12:50:09Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "02-24-test_add_cache_dce_guard_test",
+        "url": "https://github.com/vercel/next.js/pull/90428"
+      },
+      {
+        "number": 90427,
+        "title": "feat(node-streams): add config flag, define-env, and env precedence test",
+        "author": "timneutkens",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T12:29:15Z",
+        "updatedAt": "2026-02-25T10:03:17Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 171,
+        "deletions": 1,
+        "changedFiles": 13,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "graphite-base/90427",
+        "headBranch": "02-24-feat_node-streams_add_config_flag_define-env_and_env_precedence_test",
+        "url": "https://github.com/vercel/next.js/pull/90427"
+      },
+      {
+        "number": 90424,
+        "title": "refactor: update module.compiled.js for node stream support",
+        "author": "timneutkens",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-24T12:16:15Z",
+        "updatedAt": "2026-02-24T15:06:49Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-24T15:06:49Z",
+        "additions": 39,
+        "deletions": 4,
+        "changedFiles": 2,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T13:20:13Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "graphite-base/90424",
+        "headBranch": "02-24-refactor_update_module.compiled.js_for_node_stream_support",
+        "url": "https://github.com/vercel/next.js/pull/90424"
+      },
+      {
+        "number": 90423,
+        "title": "tests: reenable escheck-output",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T11:41:39Z",
+        "updatedAt": "2026-02-24T16:23:40Z",
+        "mergedAt": "2026-02-24T16:23:35Z",
+        "closedAt": "2026-02-24T16:23:35Z",
+        "additions": 68,
+        "deletions": 29,
+        "changedFiles": 3,
+        "labels": [
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "lukesandberg",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T16:09:02Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/reenable-escheck",
+        "url": "https://github.com/vercel/next.js/pull/90423"
+      },
+      {
+        "number": 90422,
+        "title": "refactor: extract build infra and alias changes",
+        "author": "timneutkens",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T11:32:30Z",
+        "updatedAt": "2026-02-24T15:22:20Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 490,
+        "deletions": 36,
+        "changedFiles": 4,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "02-24-refactor_extract_build_infra_and_alias_changes",
+        "url": "https://github.com/vercel/next.js/pull/90422"
+      },
+      {
+        "number": 90420,
+        "title": "next-image: fix dpl handling with unicode",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T11:04:31Z",
+        "updatedAt": "2026-02-24T16:28:53Z",
+        "mergedAt": "2026-02-24T16:28:51Z",
+        "closedAt": "2026-02-24T16:28:51Z",
+        "additions": 195,
+        "deletions": 28,
+        "changedFiles": 5,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T11:10:22Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T11:16:36Z"
+          },
+          {
+            "author": "styfle",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T14:20:33Z"
+          },
+          {
+            "author": "styfle",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T14:26:35Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T14:26:43Z"
+          },
+          {
+            "author": "sokra",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T14:44:00Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T14:53:21Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/next-img-unicode-dpl",
+        "url": "https://github.com/vercel/next.js/pull/90420"
+      },
+      {
+        "number": 90416,
+        "title": "next-image: fix deployment id handling for unoptimized",
+        "author": "mischnic",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T09:17:12Z",
+        "updatedAt": "2026-02-24T15:53:07Z",
+        "mergedAt": "2026-02-24T15:53:04Z",
+        "closedAt": "2026-02-24T15:53:04Z",
+        "additions": 190,
+        "deletions": 14,
+        "changedFiles": 5,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "sokra",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T10:20:42Z"
+          },
+          {
+            "author": "styfle",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T14:15:52Z"
+          },
+          {
+            "author": "styfle",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T14:17:11Z"
+          },
+          {
+            "author": "styfle",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T14:19:01Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T14:26:57Z"
+          },
+          {
+            "author": "styfle",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T15:11:05Z"
+          },
+          {
+            "author": "styfle",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T15:19:33Z"
+          },
+          {
+            "author": "styfle",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T15:19:36Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T15:20:46Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "mischnic/fix-next-image-unoptimized",
+        "url": "https://github.com/vercel/next.js/pull/90416"
+      },
+      {
+        "number": 90413,
+        "title": "Update Rspack development test manifest",
+        "author": "vercel-release-bot",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T07:19:44Z",
+        "updatedAt": "2026-02-25T01:46:11Z",
+        "mergedAt": "2026-02-25T01:46:10Z",
+        "closedAt": "2026-02-25T01:46:10Z",
+        "additions": 868,
+        "deletions": 1224,
+        "changedFiles": 1,
+        "labels": [
+          "tests",
+          "run-react-18-tests"
+        ],
+        "reviews": [
+          {
+            "author": "bgw",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T01:24:23Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/rspack-manifest-1771917577590",
+        "url": "https://github.com/vercel/next.js/pull/90413"
+      },
+      {
+        "number": 90412,
+        "title": "Update Rspack production test manifest",
+        "author": "vercel-release-bot",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T07:19:43Z",
+        "updatedAt": "2026-02-25T01:24:45Z",
+        "mergedAt": "2026-02-25T01:24:42Z",
+        "closedAt": "2026-02-25T01:24:42Z",
+        "additions": 703,
+        "deletions": 272,
+        "changedFiles": 1,
+        "labels": [
+          "tests",
+          "run-react-18-tests"
+        ],
+        "reviews": [
+          {
+            "author": "bgw",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T01:24:13Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/rspack-manifest-1771917575117",
+        "url": "https://github.com/vercel/next.js/pull/90412"
+      },
+      {
+        "number": 90408,
+        "title": "[ci] resolve Vercel build error by configuring pnpm-workspace.yaml for pnpm v10+",
+        "author": "puxiao",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-24T05:34:22Z",
+        "updatedAt": "2026-02-25T00:27:08Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-25T00:27:08Z",
+        "additions": 2,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "create-next-app"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T05:39:02Z"
+          },
+          {
+            "author": "eps1lon",
+            "state": "CHANGES_REQUESTED",
+            "submittedAt": "2026-02-24T13:56:21Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "patch-3",
+        "url": "https://github.com/vercel/next.js/pull/90408"
+      },
+      {
+        "number": 90405,
+        "title": "docs: fix typo `rendering` -> `prerendering` in cache-components.mdx",
+        "author": "DimaAmega",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T04:43:58Z",
+        "updatedAt": "2026-02-26T01:42:27Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "Documentation"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "patch-3",
+        "url": "https://github.com/vercel/next.js/pull/90405"
+      },
+      {
+        "number": 90400,
+        "title": "Fix route cache keying for unprefetched navigations",
+        "author": "acdlite",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T00:31:04Z",
+        "updatedAt": "2026-02-24T06:39:40Z",
+        "mergedAt": "2026-02-24T06:39:39Z",
+        "closedAt": "2026-02-24T06:39:39Z",
+        "additions": 319,
+        "deletions": 22,
+        "changedFiles": 14,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "unstubbable",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T05:08:16Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "acdlite/fix-optimistic-interception",
+        "url": "https://github.com/vercel/next.js/pull/90400"
+      },
+      {
+        "number": 90399,
+        "title": "Update font data",
+        "author": "vercel-release-bot",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-24T00:20:53Z",
+        "updatedAt": "2026-02-24T00:37:16Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 220,
+        "deletions": 0,
+        "changedFiles": 2,
+        "labels": [
+          "type: next",
+          "Font (next/font)",
+          "run-react-18-tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/fonts-data-1771892442117",
+        "url": "https://github.com/vercel/next.js/pull/90399"
+      },
+      {
+        "number": 90398,
+        "title": "Turbopack: Fix experimental server hmr for pages router",
+        "author": "wbinnssmith",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-24T00:19:09Z",
+        "updatedAt": "2026-02-25T05:01:19Z",
+        "mergedAt": "2026-02-24T18:27:51Z",
+        "closedAt": "2026-02-24T18:27:51Z",
+        "additions": 21,
+        "deletions": 10,
+        "changedFiles": 1,
+        "labels": [
+          "type: next",
+          "created-by: Turbopack team",
+          "claude-code-assisted"
+        ],
+        "reviews": [
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T01:03:35Z"
+          },
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T01:04:53Z"
+          },
+          {
+            "author": "lukesandberg",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-24T03:13:55Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "server-hmr-cache-fix",
+        "url": "https://github.com/vercel/next.js/pull/90398"
+      },
+      {
+        "number": 90397,
+        "title": "Add trace spans for turbopack persistence in .next/trace",
+        "author": "lukesandberg",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-23T23:52:10Z",
+        "updatedAt": "2026-02-26T01:29:31Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 322,
+        "deletions": 200,
+        "changedFiles": 15,
+        "labels": [
+          "type: next",
+          "Turbopack",
+          "created-by: Turbopack team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T03:00:14Z"
+          },
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T03:00:35Z"
+          },
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T03:00:55Z"
+          },
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T03:01:51Z"
+          },
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T03:02:25Z"
+          },
+          {
+            "author": "lukesandberg",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T00:22:30Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "trace_persisting",
+        "url": "https://github.com/vercel/next.js/pull/90397"
+      },
+      {
+        "number": 90396,
+        "title": "Throw when `unstable_instant` is used in Client Component",
+        "author": "devjiwonchoi",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T23:38:32Z",
+        "updatedAt": "2026-02-25T22:34:10Z",
+        "mergedAt": "2026-02-25T22:34:08Z",
+        "closedAt": "2026-02-25T22:34:08Z",
+        "additions": 116,
+        "deletions": 30,
+        "changedFiles": 7,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "Turbopack",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "lubieowoce",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T15:46:42Z"
+          },
+          {
+            "author": "lubieowoce",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T15:48:25Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T16:26:07Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T16:28:58Z"
+          },
+          {
+            "author": "devjiwonchoi",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-24T17:37:51Z"
+          },
+          {
+            "author": "lubieowoce",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T22:34:00Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "jiwon/unstable-instant-client-validation",
+        "url": "https://github.com/vercel/next.js/pull/90396"
+      },
+      {
+        "number": 90394,
+        "title": "docs: fixes typo in manifest.mdx regarding Route Handler note",
+        "author": "tdarthur",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T22:13:56Z",
+        "updatedAt": "2026-02-23T22:52:45Z",
+        "mergedAt": "2026-02-23T22:52:45Z",
+        "closedAt": "2026-02-23T22:52:45Z",
+        "additions": 1,
+        "deletions": 1,
+        "changedFiles": 1,
+        "labels": [
+          "Documentation"
+        ],
+        "reviews": [
+          {
+            "author": "icyJoseph",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:34:23Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "canary",
+        "url": "https://github.com/vercel/next.js/pull/90394"
+      },
+      {
+        "number": 90391,
+        "title": "Add support for Next.js error telemetry for `AggregateError`",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T20:22:43Z",
+        "updatedAt": "2026-02-24T14:35:58Z",
+        "mergedAt": "2026-02-24T14:35:56Z",
+        "closedAt": "2026-02-24T14:35:56Z",
+        "additions": 11,
+        "deletions": 5,
+        "changedFiles": 2,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "Turbopack"
+        ],
+        "reviews": [
+          {
+            "author": "gaojude",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T23:15:00Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sebbie/02-23-add_support_for_next.js_error_telemetry_for_aggregateerror_",
+        "url": "https://github.com/vercel/next.js/pull/90391"
+      },
+      {
+        "number": 90390,
+        "title": "[ci] Stop linting auto-generated next-swc typings",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:48:13Z",
+        "updatedAt": "2026-02-23T19:31:07Z",
+        "mergedAt": "2026-02-23T19:25:54Z",
+        "closedAt": "2026-02-23T19:25:54Z",
+        "additions": 1,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "created-by: Next.js team",
+          "CI approved"
+        ],
+        "reviews": [
+          {
+            "author": "ztanner",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T18:55:12Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T18:57:02Z"
+          },
+          {
+            "author": "eps1lon",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T19:02:17Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "cursor/next-swc-native-lint-ignore-489d",
+        "url": "https://github.com/vercel/next.js/pull/90390"
+      },
+      {
+        "number": 90388,
+        "title": "Assert cache value in node middleware tests",
+        "author": "ijjk",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:34:38Z",
+        "updatedAt": "2026-02-23T23:07:29Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 44,
+        "deletions": 12,
+        "changedFiles": 4,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "ijjk/node-middleware-cache",
+        "url": "https://github.com/vercel/next.js/pull/90388"
+      },
+      {
+        "number": 90387,
+        "title": "[ci] Crash if next-swc could not be loaded when `NEXT_TEST_NATIVE_DIR` is specified",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:30:23Z",
+        "updatedAt": "2026-02-25T20:55:48Z",
+        "mergedAt": "2026-02-25T20:55:45Z",
+        "closedAt": "2026-02-25T20:55:45Z",
+        "additions": 15,
+        "deletions": 6,
+        "changedFiles": 2,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "Documentation",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T18:37:05Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T19:04:51Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T19:04:54Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T19:28:34Z"
+          },
+          {
+            "author": "eps1lon",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T22:35:52Z"
+          },
+          {
+            "author": "mischnic",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-25T20:30:11Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sebbie/02-23-_ci_crash_if_next-swc_could_not_be_loaded_when_next_test_native_dir_is_specified",
+        "url": "https://github.com/vercel/next.js/pull/90387"
+      },
+      {
+        "number": 90386,
+        "title": "docs: add Docker Standalone and Docker Export examples to Deploying page",
+        "author": "kristiyan-velkov",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-23T18:14:39Z",
+        "updatedAt": "2026-02-26T09:31:02Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 9,
+        "deletions": 8,
+        "changedFiles": 1,
+        "labels": [
+          "examples",
+          "Documentation"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T18:22:09Z"
+          },
+          {
+            "author": "icyJoseph",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-26T09:31:02Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "docs/docker-examples-deploying",
+        "url": "https://github.com/vercel/next.js/pull/90386"
+      },
+      {
+        "number": 90384,
+        "title": "Revert \"keep next-env.d.s unchanged between dev and build\"",
+        "author": "eps1lon",
+        "state": "merged",
+        "isDraft": false,
+        "createdAt": "2026-02-23T17:14:26Z",
+        "updatedAt": "2026-02-23T22:32:40Z",
+        "mergedAt": "2026-02-23T22:32:06Z",
+        "closedAt": "2026-02-23T22:32:06Z",
+        "additions": 166,
+        "deletions": 392,
+        "changedFiles": 22,
+        "labels": [
+          "type: next",
+          "created-by: Next.js team",
+          "tests"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T17:18:27Z"
+          },
+          {
+            "author": "icyJoseph",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T22:32:01Z"
+          },
+          {
+            "author": "icyJoseph",
+            "state": "APPROVED",
+            "submittedAt": "2026-02-23T22:32:04Z"
+          },
+          {
+            "author": "eps1lon",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T22:32:40Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "sebbie/fix-typegen",
+        "url": "https://github.com/vercel/next.js/pull/90384"
+      },
+      {
+        "number": 90382,
+        "title": "Upgrade React from `ab18f33d-20260220` to `ab18f33d-20260220`",
+        "author": "nextjs-bot",
+        "state": "closed",
+        "isDraft": false,
+        "createdAt": "2026-02-23T17:03:56Z",
+        "updatedAt": "2026-02-23T17:26:04Z",
+        "mergedAt": null,
+        "closedAt": "2026-02-23T17:16:33Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "labels": [
+          "CI approved",
+          "type: react-sync"
+        ],
+        "reviews": [],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "update/react/19.3.0-canary-ab18f33d-20260220",
+        "url": "https://github.com/vercel/next.js/pull/90382"
+      },
+      {
+        "number": 90380,
+        "title": "docs: clarify native <script> usage for JSON-LD in docs",
+        "author": "abhishekmardiya",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-23T16:30:06Z",
+        "updatedAt": "2026-02-24T02:28:06Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 2,
+        "deletions": 0,
+        "changedFiles": 1,
+        "labels": [
+          "Documentation"
+        ],
+        "reviews": [
+          {
+            "author": "icyJoseph",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T23:32:38Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "fix/ld-json-script-note",
+        "url": "https://github.com/vercel/next.js/pull/90380"
+      },
+      {
+        "number": 90370,
+        "title": "fix: handle file:// URLs from import.meta.resolve in cache handler path (fixes #73796)",
+        "author": "VedantMadane",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-23T12:17:52Z",
+        "updatedAt": "2026-02-24T04:35:45Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 66,
+        "deletions": 26,
+        "changedFiles": 5,
+        "labels": [
+          "type: next"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T12:21:57Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "fix/esm-cache-handler-path-73796",
+        "url": "https://github.com/vercel/next.js/pull/90370"
+      },
+      {
+        "number": 90363,
+        "title": "docs: use PageProps helper in metadata",
+        "author": "bastiendmt",
+        "state": "open",
+        "isDraft": false,
+        "createdAt": "2026-02-23T08:39:38Z",
+        "updatedAt": "2026-02-23T15:13:21Z",
+        "mergedAt": null,
+        "closedAt": null,
+        "additions": 6,
+        "deletions": 8,
+        "changedFiles": 1,
+        "labels": [
+          "Documentation"
+        ],
+        "reviews": [
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T08:43:14Z"
+          },
+          {
+            "author": "vercel[bot]",
+            "state": "COMMENTED",
+            "submittedAt": "2026-02-23T15:13:21Z"
+          }
+        ],
+        "commits": 0,
+        "comments": 0,
+        "baseBranch": "canary",
+        "headBranch": "patch-3",
+        "url": "https://github.com/vercel/next.js/pull/90363"
+      }
+    ],
+    "microsoft/typescript": []
   }
 }

@@ -4,10 +4,21 @@ import { Error } from '../components/common/Error';
 import { MetricCard } from '../components/metrics/MetricCard';
 import { TrendChart } from '../components/charts/TrendChart';
 import { PieChart } from '../components/charts/PieChart';
+import { DateRangeFilter } from '../components/filters/DateRangeFilter';
+import { RepositoryFilter } from '../components/filters/RepositoryFilter';
+import { TeamFilter } from '../components/filters/TeamFilter';
+import { useFilteredMetrics } from '../hooks/useFilteredMetrics';
 import { formatPercent, getAIToolDisplayName, getAIToolColor } from '../utils/formatters';
 
 export function AIMetrics() {
-  const { metrics, loading, error, refresh } = useData();
+  const { metrics, filteredCommits, filteredDeployments, dateRange, setDateRange, loading, error, refresh } = useData();
+
+  // Compute filtered AI metrics
+  const filteredMetrics = useFilteredMetrics({
+    filteredCommits,
+    filteredDeployments,
+    dateRange,
+  });
 
   if (loading) {
     return <Loading />;
@@ -21,7 +32,7 @@ export function AIMetrics() {
     return <Error message="No metrics data available" onRetry={refresh} />;
   }
 
-  const { ai } = metrics;
+  const ai = filteredMetrics.ai;
 
   const toolChartData = ai.byTool.map((t) => ({
     name: getAIToolDisplayName(t.tool),
@@ -38,11 +49,22 @@ export function AIMetrics() {
   return (
     <div className="space-y-8">
       {/* Header */}
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">AI-Assisted Development</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          Track AI tool usage and adoption across your team
-        </p>
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">AI-Assisted Development</h1>
+          <p className="text-sm text-gray-500 mt-1">
+            Track AI tool usage and adoption across your team
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 flex-wrap">
+          <RepositoryFilter />
+          <TeamFilter />
+          <DateRangeFilter
+            startDate={dateRange.start}
+            endDate={dateRange.end}
+            onChange={(start, end) => setDateRange({ start, end })}
+          />
+        </div>
       </div>
 
       {/* Overview Cards */}

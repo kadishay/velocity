@@ -175,6 +175,35 @@ export interface DeploymentsFileData {
   }>;
 }
 
+// Pull Request data from prs.json
+export interface PRData {
+  number: number;
+  title: string;
+  author: string;
+  state: 'open' | 'closed' | 'merged';
+  isDraft: boolean;
+  createdAt: string;
+  updatedAt: string;
+  mergedAt: string | null;
+  closedAt: string | null;
+  additions: number;
+  deletions: number;
+  changedFiles: number;
+  labels: string[];
+  reviews: { author: string; state: string; submittedAt: string }[];
+  commits: number;
+  comments: number;
+  baseBranch: string;
+  headBranch: string;
+  url: string;
+}
+
+export interface PRsFileData {
+  extractedAt: string;
+  dateRange: { start: string; end: string };
+  repositories: Record<string, PRData[]>;
+}
+
 // Team configuration
 export interface Team {
   displayName: string;

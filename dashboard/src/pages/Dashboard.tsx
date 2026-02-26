@@ -2,6 +2,7 @@ import { useData } from '../context/DataContext';
 import { Loading } from '../components/common/Loading';
 import { Error } from '../components/common/Error';
 import { ChartExport } from '../components/common/ChartExport';
+import { AnimatedNumber } from '../components/common/AnimatedNumber';
 import { DORAMetrics } from '../components/metrics/DORAMetrics';
 import { PRMetrics } from '../components/metrics/PRMetrics';
 import { CommitMetrics } from '../components/metrics/CommitMetrics';
@@ -78,12 +79,14 @@ export function Dashboard() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div className="bg-white rounded-lg border border-gray-200 p-4">
           <p className="text-sm text-gray-500">Pull Requests</p>
-          <p className="text-2xl font-semibold text-gray-900 mt-1">{metrics.summary.totalPRs}</p>
+          <p className="text-2xl font-semibold text-gray-900 mt-1">
+            <AnimatedNumber value={metrics.summary.totalPRs} />
+          </p>
         </div>
         <div className="bg-white rounded-lg border border-gray-200 p-4">
           <p className="text-sm text-gray-500">Commits</p>
           <p className="text-2xl font-semibold text-gray-900 mt-1">
-            {filteredMetrics.summary.totalCommits}
+            <AnimatedNumber value={filteredMetrics.summary.totalCommits} />
           </p>
           {filteredMetrics.summary.totalCommits !== metrics.summary.totalCommits && (
             <p className="text-xs text-gray-400">of {metrics.summary.totalCommits} total</p>
@@ -92,7 +95,7 @@ export function Dashboard() {
         <div className="bg-white rounded-lg border border-gray-200 p-4">
           <p className="text-sm text-gray-500">Deployments</p>
           <p className="text-2xl font-semibold text-gray-900 mt-1">
-            {filteredMetrics.summary.totalDeployments}
+            <AnimatedNumber value={filteredMetrics.summary.totalDeployments} />
           </p>
           {filteredMetrics.summary.totalDeployments !== metrics.summary.totalDeployments && (
             <p className="text-xs text-gray-400">of {metrics.summary.totalDeployments} total</p>
@@ -101,9 +104,12 @@ export function Dashboard() {
         <div className="bg-white rounded-lg border border-gray-200 p-4">
           <p className="text-sm text-gray-500">AI Commits</p>
           <p className="text-2xl font-semibold text-gray-900 mt-1">
-            {filteredMetrics.summary.aiCommits}
+            <AnimatedNumber value={filteredMetrics.summary.aiCommits} />
             <span className="text-sm font-normal text-gray-500 ml-1">
-              ({(filteredMetrics.summary.aiRatio * 100).toFixed(0)}%)
+              (<AnimatedNumber
+                value={Math.round(filteredMetrics.summary.aiRatio * 100)}
+                formatFn={(v) => `${v}%`}
+              />)
             </span>
           </p>
         </div>

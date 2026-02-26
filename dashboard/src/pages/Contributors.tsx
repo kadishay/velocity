@@ -1,10 +1,21 @@
 import { useData } from '../context/DataContext';
 import { Loading } from '../components/common/Loading';
 import { Error } from '../components/common/Error';
+import { DateRangeFilter } from '../components/filters/DateRangeFilter';
+import { RepositoryFilter } from '../components/filters/RepositoryFilter';
+import { TeamFilter } from '../components/filters/TeamFilter';
+import { useFilteredMetrics } from '../hooks/useFilteredMetrics';
 import { formatPercent, getAIToolDisplayName, getAIToolColor } from '../utils/formatters';
 
 export function Contributors() {
-  const { metrics, teamsConfig, loading, error, refresh } = useData();
+  const { metrics, teamsConfig, filteredCommits, filteredDeployments, dateRange, setDateRange, loading, error, refresh } = useData();
+
+  // Compute filtered metrics
+  const filteredMetrics = useFilteredMetrics({
+    filteredCommits,
+    filteredDeployments,
+    dateRange,
+  });
 
   // Helper to get team(s) for a contributor
   const getContributorTeams = (author: string) => {
@@ -26,9 +37,9 @@ export function Contributors() {
     return <Error message="No metrics data available" onRetry={refresh} />;
   }
 
-  // Merge commit data with AI data
-  const contributors = metrics.commits.contributors.top.map((c) => {
-    const aiData = metrics.ai.byUser.find((u) => u.author === c.author);
+  // Merge commit data with AI data from filtered metrics
+  const contributors = filteredMetrics.commits.contributors.top.map((c) => {
+    const aiData = filteredMetrics.ai.byUser.find((u) => u.author === c.author);
     return {
       ...c,
       aiCommits: aiData?.aiCommits || 0,
@@ -39,11 +50,22 @@ export function Contributors() {
 
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">Contributors</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          {metrics.commits.contributors.total} active contributors
-        </p>
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">Contributors</h1>
+          <p className="text-sm text-gray-500 mt-1">
+            {filteredMetrics.commits.contributors.total} active contributors
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 flex-wrap">
+          <RepositoryFilter />
+          <TeamFilter />
+          <DateRangeFilter
+            startDate={dateRange.start}
+            endDate={dateRange.end}
+            onChange={(start, end) => setDateRange({ start, end })}
+          />
+        </div>
       </div>
 
       {contributors.length > 0 ? (

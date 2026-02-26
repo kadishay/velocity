@@ -13,7 +13,8 @@ export function CommitMetrics({ data }: CommitMetricsProps) {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <MetricCard
           title="Total Commits"
-          value={data.total.toString()}
+          value={data.total}
+          animate
           subtitle={`${data.frequency.perDay.toFixed(1)}/day`}
           icon={
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,7 +36,8 @@ export function CommitMetrics({ data }: CommitMetricsProps) {
 
         <MetricCard
           title="Contributors"
-          value={data.contributors.total.toString()}
+          value={data.contributors.total}
+          animate
           subtitle="Active developers"
           icon={
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
