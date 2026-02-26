@@ -1,0 +1,18 @@
+{
+  "repositories": [
+    "kadishay/company-blueprint",
+    "kadishay/multi-docker"
+  ],
+  "teams": {},
+  "settings": {
+    "defaultDateRange": 30,
+    "deploymentBranch": "main",
+    "excludeAuthors": [
+      "dependabot[bot]",
+      "renovate[bot]",
+      "github-actions[bot]"
+    ],
+    "excludeLabels": [],
+    "excludeDraftPRs": true
+  }
+}

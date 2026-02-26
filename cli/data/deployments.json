@@ -1,0 +1,13 @@
+{
+  "extractedAt": "2026-02-26T09:54:55.865Z",
+  "dateRange": {
+    "start": "2026-01-27T09:54:54.265Z",
+    "end": "2026-02-26T09:54:54.265Z"
+  },
+  "repositories": {
+    "kadishay/company-blueprint": {
+      "deployments": [],
+      "releases": []
+    }
+  }
+}

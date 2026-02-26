@@ -1,0 +1,14 @@
+{
+  "teams": {
+    "engineering": {
+      "displayName": "Engineering",
+      "members": ["kadishay"],
+      "repositories": ["kadishay/company-blueprint"],
+      "color": "#3b82f6"
+    }
+  },
+  "settings": {
+    "showIndividualMetrics": true,
+    "showTeamRankings": true
+  }
+}

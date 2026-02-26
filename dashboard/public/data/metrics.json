@@ -1,0 +1,109 @@
+{
+  "calculatedAt": "2026-02-26T09:55:06.452Z",
+  "dateRange": {
+    "start": "2026-01-27T09:54:54.265Z",
+    "end": "2026-02-26T09:54:54.265Z"
+  },
+  "summary": {
+    "repositories": 1,
+    "totalPRs": 0,
+    "totalCommits": 13,
+    "totalDeployments": 0
+  },
+  "dora": {
+    "leadTimeForChanges": {
+      "averageHours": 0,
+      "medianHours": 0,
+      "p90Hours": 0,
+      "formatted": "0m"
+    },
+    "deploymentFrequency": {
+      "perDay": 0,
+      "perWeek": 0
+    },
+    "changeFailureRate": {
+      "percentage": 0,
+      "failed": 0,
+      "total": 0
+    }
+  },
+  "pullRequests": {
+    "timeToFirstReview": {
+      "averageHours": 0,
+      "medianHours": 0,
+      "formatted": "0m"
+    },
+    "timeToMerge": {
+      "averageHours": 0,
+      "medianHours": 0,
+      "formatted": "0m"
+    },
+    "throughput": {
+      "opened": 0,
+      "merged": 0,
+      "closed": 0
+    },
+    "sizeDistribution": {
+      "xs": 0,
+      "s": 0,
+      "m": 0,
+      "l": 0,
+      "xl": 0
+    }
+  },
+  "commits": {
+    "total": 13,
+    "frequency": {
+      "perDay": 0.43,
+      "perWeek": 3.03
+    },
+    "contributors": {
+      "total": 1,
+      "top": [
+        {
+          "author": "kadishay",
+          "commits": 13
+        }
+      ]
+    }
+  },
+  "ai": {
+    "summary": {
+      "totalAICommits": 4,
+      "totalCommits": 13,
+      "aiRatio": 0.31,
+      "usersWithAI": 1,
+      "totalUsers": 1
+    },
+    "byTool": [
+      {
+        "tool": "claude",
+        "commits": 4,
+        "users": 1
+      }
+    ],
+    "byUser": [
+      {
+        "author": "kadishay",
+        "aiCommits": 4,
+        "totalCommits": 13,
+        "ratio": 0.31,
+        "primaryTool": "claude"
+      }
+    ],
+    "trend": [
+      {
+        "date": "2026-01-29",
+        "aiCommits": 0,
+        "totalCommits": 9,
+        "ratio": 0
+      },
+      {
+        "date": "2026-02-02",
+        "aiCommits": 4,
+        "totalCommits": 4,
+        "ratio": 1
+      }
+    ]
+  }
+}

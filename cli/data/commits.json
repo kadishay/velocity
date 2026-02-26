@@ -1,0 +1,273 @@
+{
+  "extractedAt": "2026-02-26T09:54:55.865Z",
+  "dateRange": {
+    "start": "2026-01-27T09:54:54.265Z",
+    "end": "2026-02-26T09:54:54.265Z"
+  },
+  "repositories": {
+    "kadishay/company-blueprint": [
+      {
+        "sha": "34c6861f786e3edfd7f4458d3ea1991b2a95628a",
+        "shortSha": "34c6861",
+        "message": "Add role-specific log directories",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-02-02T08:33:34Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "898a217b6e574e22bf74ee37559596998db9dd0c"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [
+          {
+            "name": "Claude Opus 4.5",
+            "email": "noreply@anthropic.com",
+            "tool": "claude"
+          }
+        ],
+        "isAIAssisted": true
+      },
+      {
+        "sha": "898a217b6e574e22bf74ee37559596998db9dd0c",
+        "shortSha": "898a217",
+        "message": "Add .gitignore, consolidate templates, create folder structure",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-02-02T08:31:47Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "42aa9615419d8dbcfaae67f2cb2ef14da4075d6c"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [
+          {
+            "name": "Claude Opus 4.5",
+            "email": "noreply@anthropic.com",
+            "tool": "claude"
+          }
+        ],
+        "isAIAssisted": true
+      },
+      {
+        "sha": "42aa9615419d8dbcfaae67f2cb2ef14da4075d6c",
+        "shortSha": "42aa961",
+        "message": "Merge .claud into .claude and add product folder",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-02-02T08:24:58Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "44137edf4976742f4ace4239395ec63f49e294d7"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [
+          {
+            "name": "Claude Opus 4.5",
+            "email": "noreply@anthropic.com",
+            "tool": "claude"
+          }
+        ],
+        "isAIAssisted": true
+      },
+      {
+        "sha": "44137edf4976742f4ace4239395ec63f49e294d7",
+        "shortSha": "44137ed",
+        "message": "Clarify CEO startup protocol and reduce documentation overhead",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-02-02T08:20:21Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "521dd1272344ce72e36adc119a277613f7b36e46"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [
+          {
+            "name": "Claude Opus 4.5",
+            "email": "noreply@anthropic.com",
+            "tool": "claude"
+          }
+        ],
+        "isAIAssisted": true
+      },
+      {
+        "sha": "521dd1272344ce72e36adc119a277613f7b36e46",
+        "shortSha": "521dd12",
+        "message": "Change project title to 'AI Startup Company Blueprint'",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-01-29T20:33:08Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "3abfd5ab7640026c289d71f1d7783818c8739c29"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [],
+        "isAIAssisted": false
+      },
+      {
+        "sha": "3abfd5ab7640026c289d71f1d7783818c8739c29",
+        "shortSha": "3abfd5a",
+        "message": "rules",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-01-29T17:07:36Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "7ec0d511575102654773fb56bc0747d3b151a9cc"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [],
+        "isAIAssisted": false
+      },
+      {
+        "sha": "7ec0d511575102654773fb56bc0747d3b151a9cc",
+        "shortSha": "7ec0d51",
+        "message": "rules update",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-01-29T16:12:27Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "779443fef7e2acd257c78ca9b1b62cb6f17eb391"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [],
+        "isAIAssisted": false
+      },
+      {
+        "sha": "779443fef7e2acd257c78ca9b1b62cb6f17eb391",
+        "shortSha": "779443f",
+        "message": "rules update",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-01-29T14:53:17Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "b527be30f96601e1f35304ea2f3cab7d22a1461b"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [],
+        "isAIAssisted": false
+      },
+      {
+        "sha": "b527be30f96601e1f35304ea2f3cab7d22a1461b",
+        "shortSha": "b527be3",
+        "message": "rules update",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-01-29T14:49:28Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "3a800d9be3b90fca339c308349dc36b392d17aca"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [],
+        "isAIAssisted": false
+      },
+      {
+        "sha": "3a800d9be3b90fca339c308349dc36b392d17aca",
+        "shortSha": "3a800d9",
+        "message": "rules update",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-01-29T14:39:10Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "51bb961c9670b5e209c2ceb0a58cab845dde2e42"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [],
+        "isAIAssisted": false
+      },
+      {
+        "sha": "51bb961c9670b5e209c2ceb0a58cab845dde2e42",
+        "shortSha": "51bb961",
+        "message": "rules update",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-01-29T14:34:49Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "d057f50f85236df6a7126bb01e34db609f9febc1"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [],
+        "isAIAssisted": false
+      },
+      {
+        "sha": "d057f50f85236df6a7126bb01e34db609f9febc1",
+        "shortSha": "d057f50",
+        "message": "rules update",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-01-29T14:24:32Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [
+          "23cbe04b3d3c74ee41eabe94fb39c1eb0a750b23"
+        ],
+        "isMergeCommit": false,
+        "aiCoAuthors": [],
+        "isAIAssisted": false
+      },
+      {
+        "sha": "23cbe04b3d3c74ee41eabe94fb39c1eb0a750b23",
+        "shortSha": "23cbe04",
+        "message": "first comit of boilerplate",
+        "author": "kadishay",
+        "authorEmail": "yotamka@wix.com",
+        "committedAt": "2026-01-29T13:32:56Z",
+        "additions": 0,
+        "deletions": 0,
+        "changedFiles": 0,
+        "parents": [],
+        "isMergeCommit": false,
+        "aiCoAuthors": [],
+        "isAIAssisted": false
+      }
+    ]
+  },
+  "aiSummary": {
+    "totalCommits": 13,
+    "aiAssistedCommits": 4,
+    "aiRatio": 0.31,
+    "byTool": [
+      {
+        "tool": "claude",
+        "count": 4
+      }
+    ],
+    "byAuthor": [
+      {
+        "author": "kadishay",
+        "aiCommits": 4,
+        "totalCommits": 13,
+        "ratio": 0.31
+      }
+    ]
+  }
+}
