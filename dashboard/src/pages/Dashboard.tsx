@@ -14,12 +14,14 @@ import { DateRangeFilter } from '../components/filters/DateRangeFilter';
 import { TeamFilter } from '../components/filters/TeamFilter';
 import { RepositoryFilter } from '../components/filters/RepositoryFilter';
 import { useFilteredMetrics } from '../hooks/useFilteredMetrics';
+import { useFilteredPRMetrics } from '../hooks/useFilteredPRMetrics';
 
 export function Dashboard() {
   const {
     metrics,
     filteredCommits,
     filteredDeployments,
+    filteredPRs,
     dateRange,
     setDateRange,
     selectedTeam,
@@ -35,6 +37,9 @@ export function Dashboard() {
     filteredDeployments,
     dateRange,
   });
+
+  // Compute PR metrics from filtered PRs
+  const filteredPRMetrics = useFilteredPRMetrics({ filteredPRs });
 
   // Check if any filters are active (for UI indicators)
   const hasActiveFilters = selectedTeam || selectedRepository;
@@ -80,8 +85,11 @@ export function Dashboard() {
         <div className="bg-white rounded-lg border border-gray-200 p-4">
           <p className="text-sm text-gray-500">Pull Requests</p>
           <p className="text-2xl font-semibold text-gray-900 mt-1">
-            <AnimatedNumber value={metrics.summary.totalPRs} />
+            <AnimatedNumber value={filteredPRs.length} />
           </p>
+          {filteredPRs.length !== metrics.summary.totalPRs && (
+            <p className="text-xs text-gray-400">of {metrics.summary.totalPRs} total</p>
+          )}
         </div>
         <div className="bg-white rounded-lg border border-gray-200 p-4">
           <p className="text-sm text-gray-500">Commits</p>
@@ -118,8 +126,8 @@ export function Dashboard() {
       {/* DORA Metrics - Note: Uses pre-computed data from full extraction period */}
       <DORAMetrics data={metrics.dora} />
 
-      {/* PR Metrics - Note: Uses pre-computed data from full extraction period */}
-      <PRMetrics data={metrics.pullRequests} />
+      {/* PR Metrics - Uses filtered data */}
+      <PRMetrics data={filteredPRMetrics} />
 
       {/* Commit Metrics - Uses filtered data */}
       <CommitMetrics data={filteredMetrics.commits} />
