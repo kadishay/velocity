@@ -1,3 +1,4 @@
+import { useMemo, useState } from 'react';
 import { useData } from '../context/DataContext';
 import { Loading } from '../components/common/Loading';
 import { Error } from '../components/common/Error';
@@ -9,6 +10,9 @@ import { RepositoryFilter } from '../components/filters/RepositoryFilter';
 import { TeamFilter } from '../components/filters/TeamFilter';
 import { useFilteredMetrics } from '../hooks/useFilteredMetrics';
 import { formatPercent, getAIToolDisplayName, getAIToolColor } from '../utils/formatters';
+
+type SortColumn = 'aiCommits' | 'totalCommits' | 'ratio' | 'author';
+type SortDirection = 'asc' | 'desc';
 
 export function AIMetrics() {
   const { metrics, filteredCommits, filteredDeployments, dateRange, setDateRange, loading, error, refresh } = useData();
@@ -33,6 +37,59 @@ export function AIMetrics() {
   }
 
   const ai = filteredMetrics.ai;
+
+  // Sorting state for leaderboard
+  const [sortColumn, setSortColumn] = useState<SortColumn>('aiCommits');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
+
+  const sortedUsers = useMemo(() => {
+    return [...ai.byUser].sort((a, b) => {
+      let comparison = 0;
+      switch (sortColumn) {
+        case 'aiCommits':
+          comparison = a.aiCommits - b.aiCommits;
+          break;
+        case 'totalCommits':
+          comparison = a.totalCommits - b.totalCommits;
+          break;
+        case 'ratio':
+          comparison = a.ratio - b.ratio;
+          break;
+        case 'author':
+          comparison = a.author.localeCompare(b.author);
+          break;
+      }
+      return sortDirection === 'desc' ? -comparison : comparison;
+    });
+  }, [ai.byUser, sortColumn, sortDirection]);
+
+  const handleSort = (column: SortColumn) => {
+    if (sortColumn === column) {
+      setSortDirection(sortDirection === 'desc' ? 'asc' : 'desc');
+    } else {
+      setSortColumn(column);
+      setSortDirection('desc');
+    }
+  };
+
+  const SortIcon = ({ column }: { column: SortColumn }) => {
+    if (sortColumn !== column) {
+      return (
+        <svg className="w-4 h-4 ml-1 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+        </svg>
+      );
+    }
+    return sortDirection === 'desc' ? (
+      <svg className="w-4 h-4 ml-1 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    ) : (
+      <svg className="w-4 h-4 ml-1 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+      </svg>
+    );
+  };
 
   const toolChartData = ai.byTool.map((t) => ({
     name: getAIToolDisplayName(t.tool),
@@ -142,33 +199,65 @@ export function AIMetrics() {
 
       {/* User Leaderboard */}
       {ai.byUser.length > 0 && (
-        <div className="bg-white rounded-lg border border-gray-200 p-6">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">AI Users Leaderboard</h3>
+        <div className="bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 p-6">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">AI Users Leaderboard</h3>
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
-                <tr className="text-left text-sm text-gray-500 border-b border-gray-200">
+                <tr className="text-left text-sm text-gray-500 dark:text-gray-400 border-b border-gray-200 dark:border-gray-700">
                   <th className="pb-3 font-medium">Rank</th>
-                  <th className="pb-3 font-medium">User</th>
-                  <th className="pb-3 font-medium text-right">AI Commits</th>
-                  <th className="pb-3 font-medium text-right">Total Commits</th>
-                  <th className="pb-3 font-medium text-right">AI Ratio</th>
+                  <th
+                    className="pb-3 font-medium cursor-pointer hover:text-gray-700 dark:hover:text-gray-200 select-none"
+                    onClick={() => handleSort('author')}
+                  >
+                    <span className="inline-flex items-center">
+                      User
+                      <SortIcon column="author" />
+                    </span>
+                  </th>
+                  <th
+                    className="pb-3 font-medium text-right cursor-pointer hover:text-gray-700 dark:hover:text-gray-200 select-none"
+                    onClick={() => handleSort('aiCommits')}
+                  >
+                    <span className="inline-flex items-center justify-end">
+                      AI Commits
+                      <SortIcon column="aiCommits" />
+                    </span>
+                  </th>
+                  <th
+                    className="pb-3 font-medium text-right cursor-pointer hover:text-gray-700 dark:hover:text-gray-200 select-none"
+                    onClick={() => handleSort('totalCommits')}
+                  >
+                    <span className="inline-flex items-center justify-end">
+                      Total Commits
+                      <SortIcon column="totalCommits" />
+                    </span>
+                  </th>
+                  <th
+                    className="pb-3 font-medium text-right cursor-pointer hover:text-gray-700 dark:hover:text-gray-200 select-none"
+                    onClick={() => handleSort('ratio')}
+                  >
+                    <span className="inline-flex items-center justify-end">
+                      AI Ratio
+                      <SortIcon column="ratio" />
+                    </span>
+                  </th>
                   <th className="pb-3 font-medium">Primary Tool</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-100">
-                {ai.byUser.map((user, index) => (
+              <tbody className="divide-y divide-gray-100 dark:divide-gray-700">
+                {sortedUsers.map((user, index) => (
                   <tr key={user.author} className="text-sm">
                     <td className="py-3">
-                      <span className="w-6 h-6 inline-flex items-center justify-center text-xs font-medium text-gray-500 bg-gray-100 rounded-full">
+                      <span className="w-6 h-6 inline-flex items-center justify-center text-xs font-medium text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 rounded-full">
                         {index + 1}
                       </span>
                     </td>
-                    <td className="py-3 font-medium text-gray-900">{user.author}</td>
-                    <td className="py-3 text-right text-gray-600">{user.aiCommits}</td>
-                    <td className="py-3 text-right text-gray-600">{user.totalCommits}</td>
+                    <td className="py-3 font-medium text-gray-900 dark:text-white">{user.author}</td>
+                    <td className="py-3 text-right text-gray-600 dark:text-gray-300">{user.aiCommits}</td>
+                    <td className="py-3 text-right text-gray-600 dark:text-gray-300">{user.totalCommits}</td>
                     <td className="py-3 text-right">
-                      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                      <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300">
                         {formatPercent(user.ratio)}
                       </span>
                     </td>

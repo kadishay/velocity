@@ -1,6 +1,53 @@
 import type { AICoAuthor, AITool } from '../types/index.js';
 
 /**
+ * Known non-AI bots to exclude from AI detection
+ * These are automation/CI bots, not AI coding assistants
+ */
+const EXCLUDED_BOTS: RegExp[] = [
+  // Dependency update bots
+  /dependabot/i,
+  /renovate/i,
+  /maven-dependency-updater/i,
+  /snyk/i,
+  /greenkeeper/i,
+  // CI/CD bots
+  /github-actions/i,
+  /vercel\[bot\]/i,
+  /netlify/i,
+  /circleci/i,
+  /travis/i,
+  // Internal Wix bots (automation, not AI)
+  /registry-file-exporter/i,
+  /devex-bazel-targets-disabler/i,
+  /devex-bca/i,
+  /flynt-manager/i,
+  /babel-app/i,
+  /confidence-infra/i,
+  /uncle-bot/i,
+  /bca\[bot\]/i,
+  // Documentation bots
+  /docs-bot/i,
+  /nextjs-bot/i,
+  // Generic automation patterns
+  /\binfra\[bot\]/i,
+  /\bci\[bot\]/i,
+  /\bcd\[bot\]/i,
+  /\bdeploy/i,
+  /\brelease/i,
+  /\bmerge/i,
+  /\bsync/i,
+];
+
+/**
+ * Check if a co-author is an excluded automation bot
+ */
+function isExcludedBot(name: string, email: string): boolean {
+  const combined = `${name} ${email}`;
+  return EXCLUDED_BOTS.some((pattern) => pattern.test(combined));
+}
+
+/**
  * Known AI tool patterns for detection
  */
 const AI_PATTERNS: { tool: AITool; patterns: { email?: RegExp; name?: RegExp }[] }[] = [
@@ -10,6 +57,8 @@ const AI_PATTERNS: { tool: AITool; patterns: { email?: RegExp; name?: RegExp }[]
       { email: /copilot@github\.com/i },
       { email: /github-copilot/i },
       { name: /github\s*copilot/i },
+      { name: /copilot-swe-agent/i },
+      { email: /copilot@users\.noreply\.github\.com/i },
     ],
   },
   {
@@ -98,6 +147,12 @@ export function detectAICoAuthors(commitMessage: string): AICoAuthor[] {
  * Identify which AI tool a co-author belongs to
  */
 export function identifyAITool(name: string, email: string): AITool | null {
+  // First, check if this is an excluded automation bot
+  if (isExcludedBot(name, email)) {
+    return null;
+  }
+
+  // Check for known AI tools
   for (const { tool, patterns } of AI_PATTERNS) {
     for (const pattern of patterns) {
       const emailMatch = !pattern.email || pattern.email.test(email);
@@ -115,13 +170,19 @@ export function identifyAITool(name: string, email: string): AITool | null {
     }
   }
 
-  // Check for generic AI indicators as fallback
+  // Check for generic AI indicators as fallback (more strict patterns)
+  // Only match things that are clearly AI assistants, not generic bots
   const genericAIPatterns = [
-    /\bai\b/i,
+    /\bai[-_\s]?assistant\b/i,
+    /\bai[-_\s]?helper\b/i,
+    /\bai[-_\s]?coder\b/i,
     /\bartificial\s*intelligence\b/i,
-    /\bassistant\b/i,
-    /\bbot\b/i,
-    /\bgenerated\b/i,
+    /\bllm\b/i,
+    /\bgpt\b/i,
+    /\bchatgpt\b/i,
+    /\bopenai\b/i,
+    /\bcodegen\b/i,
+    /\bauto[-_]?code\b/i,
   ];
 
   for (const pattern of genericAIPatterns) {

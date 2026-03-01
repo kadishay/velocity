@@ -3,7 +3,9 @@
     "kadishay/company-blueprint",
     "facebook/react",
     "vercel/next.js",
-    "microsoft/typescript"
+    "microsoft/typescript",
+    "wix-private/meta-site",
+    "wix-private/monorepo"
   ],
   "teams": {},
   "settings": {

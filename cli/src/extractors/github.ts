@@ -62,7 +62,7 @@ export async function execGh(args: string[]): Promise<string> {
     try {
       logger.debug(`Executing: gh ${args.join(' ')}`);
       const { stdout } = await execFileAsync('gh', args, {
-        maxBuffer: 50 * 1024 * 1024, // 50MB buffer for large responses
+        maxBuffer: 500 * 1024 * 1024, // 500MB buffer for large monorepos
       });
       return stdout;
     } catch (error) {
