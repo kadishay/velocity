@@ -78,7 +78,7 @@ export interface CommitMetrics {
   };
   contributors: {
     total: number;
-    top: { author: string; commits: number }[];
+    top: { author: string; commits: number; aiCommits: number }[];
   };
 }
 

@@ -72,7 +72,14 @@ export function CommitMetrics({ data }: CommitMetricsProps) {
                   {index + 1}
                 </span>
                 <span className="flex-1 text-sm font-medium text-gray-900 dark:text-white">{contributor.author}</span>
-                <span className="text-sm text-gray-500 dark:text-gray-400">{contributor.commits} commits</span>
+                <span className="text-sm text-gray-500 dark:text-gray-400">
+                  {contributor.commits} commits
+                  {contributor.aiCommits > 0 && (
+                    <span className="ml-1 text-violet-600 dark:text-violet-400">
+                      ({contributor.aiCommits} AI)
+                    </span>
+                  )}
+                </span>
               </div>
             ))}
           </div>

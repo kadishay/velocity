@@ -30,13 +30,20 @@ export function useFilteredMetrics({
     const totalWeeks = totalDays / 7;
 
     // Commit metrics
-    const authorCommits = new Map<string, number>();
+    const authorCommits = new Map<string, { commits: number; aiCommits: number }>();
     filteredCommits.forEach((commit) => {
-      authorCommits.set(commit.author, (authorCommits.get(commit.author) || 0) + 1);
+      if (!authorCommits.has(commit.author)) {
+        authorCommits.set(commit.author, { commits: 0, aiCommits: 0 });
+      }
+      const data = authorCommits.get(commit.author)!;
+      data.commits++;
+      if (commit.isAIAssisted) {
+        data.aiCommits++;
+      }
     });
 
     const topContributors = Array.from(authorCommits.entries())
-      .map(([author, commits]) => ({ author, commits }))
+      .map(([author, data]) => ({ author, commits: data.commits, aiCommits: data.aiCommits }))
       .sort((a, b) => b.commits - a.commits)
       .slice(0, 10);
 
