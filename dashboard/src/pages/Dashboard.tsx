@@ -10,6 +10,7 @@ import { AIMetricsOverview } from '../components/metrics/AIMetricsOverview';
 import { ActivityHeatmap } from '../components/charts/ActivityHeatmap';
 import { ActivityTimeline } from '../components/charts/ActivityTimeline';
 import { DeploymentTimeline } from '../components/charts/DeploymentTimeline';
+import { ReviewTimeTrend } from '../components/charts/ReviewTimeTrend';
 import { DateRangeFilter } from '../components/filters/DateRangeFilter';
 import { TeamFilter } from '../components/filters/TeamFilter';
 import { RepositoryFilter } from '../components/filters/RepositoryFilter';
@@ -128,6 +129,17 @@ export function Dashboard() {
 
       {/* PR Metrics - Uses filtered data */}
       <PRMetrics data={filteredPRMetrics} />
+
+      {/* PR Review Time Trend */}
+      {filteredPRMetrics.reviewTimeTrend.length > 0 && (
+        <div className="bg-white rounded-lg border border-gray-200 p-6">
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">PR Review Time Trend</h2>
+          <p className="text-sm text-gray-500 mb-4">
+            Median time to first review and merge by week (3-week running average)
+          </p>
+          <ReviewTimeTrend data={filteredPRMetrics.reviewTimeTrend} height={280} />
+        </div>
+      )}
 
       {/* Commit Metrics - Uses filtered data */}
       <CommitMetrics data={filteredMetrics.commits} />

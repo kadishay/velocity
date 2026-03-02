@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { startOfWeek, format } from 'date-fns';
 import type { PRData, PRMetrics } from '../types';
 
 interface UseFilteredPRMetricsParams {
@@ -70,6 +71,80 @@ export function useFilteredPRMetrics({ filteredPRs }: UseFilteredPRMetricsParams
       return `${(hours / 24).toFixed(1)}d`;
     };
 
+    // Calculate review time trend by week
+    const weeklyData = new Map<string, { reviewTimes: number[]; mergeTimes: number[]; prCount: number }>();
+
+    filteredPRs.forEach((pr) => {
+      const weekStart = startOfWeek(new Date(pr.createdAt), { weekStartsOn: 1 });
+      const weekKey = format(weekStart, 'yyyy-MM-dd');
+
+      if (!weeklyData.has(weekKey)) {
+        weeklyData.set(weekKey, { reviewTimes: [], mergeTimes: [], prCount: 0 });
+      }
+
+      const weekData = weeklyData.get(weekKey)!;
+      weekData.prCount++;
+
+      // Calculate time to first review for this PR
+      if (pr.reviews && pr.reviews.length > 0) {
+        const firstReview = pr.reviews.sort(
+          (a, b) => new Date(a.submittedAt).getTime() - new Date(b.submittedAt).getTime()
+        )[0];
+        if (firstReview) {
+          const created = new Date(pr.createdAt).getTime();
+          const reviewed = new Date(firstReview.submittedAt).getTime();
+          const hours = (reviewed - created) / (1000 * 60 * 60);
+          if (hours >= 0) weekData.reviewTimes.push(hours);
+        }
+      }
+
+      // Calculate time to merge for this PR
+      if (pr.mergedAt) {
+        const created = new Date(pr.createdAt).getTime();
+        const merged = new Date(pr.mergedAt).getTime();
+        const hours = (merged - created) / (1000 * 60 * 60);
+        if (hours >= 0) weekData.mergeTimes.push(hours);
+      }
+    });
+
+    const getMedian = (arr: number[]): number => {
+      if (arr.length === 0) return 0;
+      const sorted = [...arr].sort((a, b) => a - b);
+      return sorted[Math.floor(sorted.length / 2)];
+    };
+
+    // Calculate raw weekly data first
+    const rawWeeklyTrend = Array.from(weeklyData.entries())
+      .map(([weekKey, data]) => ({
+        week: weekKey,
+        displayWeek: format(new Date(weekKey), 'MMM d'),
+        timeToFirstReview: getMedian(data.reviewTimes),
+        timeToMerge: getMedian(data.mergeTimes),
+        prCount: data.prCount,
+      }))
+      .sort((a, b) => a.week.localeCompare(b.week));
+
+    // Apply 3-week running average for smoother trend lines
+    const windowSize = 3;
+    const getRunningAvg = (arr: number[], index: number): number => {
+      const start = Math.max(0, index - windowSize + 1);
+      const values = arr.slice(start, index + 1).filter((v) => v > 0);
+      if (values.length === 0) return 0;
+      return values.reduce((a, b) => a + b, 0) / values.length;
+    };
+
+    const reviewTimeTrend = rawWeeklyTrend.map((week, index) => ({
+      ...week,
+      timeToFirstReview: getRunningAvg(
+        rawWeeklyTrend.map((w) => w.timeToFirstReview),
+        index
+      ),
+      timeToMerge: getRunningAvg(
+        rawWeeklyTrend.map((w) => w.timeToMerge),
+        index
+      ),
+    }));
+
     return {
       timeToFirstReview: {
         averageHours: avgReviewTime,
@@ -87,6 +162,7 @@ export function useFilteredPRMetrics({ filteredPRs }: UseFilteredPRMetricsParams
         closed,
       },
       sizeDistribution,
+      reviewTimeTrend,
     };
   }, [filteredPRs]);
 }

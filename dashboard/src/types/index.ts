@@ -61,6 +61,13 @@ export interface PRMetrics {
     l: number;
     xl: number;
   };
+  reviewTimeTrend: Array<{
+    week: string;
+    displayWeek: string;
+    timeToFirstReview: number;
+    timeToMerge: number;
+    prCount: number;
+  }>;
 }
 
 export interface CommitMetrics {
