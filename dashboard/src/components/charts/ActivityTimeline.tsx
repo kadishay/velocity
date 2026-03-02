@@ -90,6 +90,9 @@ export function ActivityTimeline({
     );
   }, [timelineData]);
 
+  const hasDeployments = totals.deployments > 0;
+  const deploymentColor = hasDeployments ? '#22c55e' : '#9ca3af';
+
   if (timelineData.length === 0) {
     return (
       <div className="flex items-center justify-center h-48 bg-gray-50 rounded-lg">
@@ -115,7 +118,7 @@ export function ActivityTimeline({
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-green-500" />
+          <div className={`w-3 h-3 rounded-full ${hasDeployments ? 'bg-green-500' : 'bg-gray-400'}`} />
           <span className="text-sm text-gray-600">
             Deployments: <AnimatedNumber value={totals.deployments} className="font-medium text-gray-900" />
           </span>
@@ -135,8 +138,8 @@ export function ActivityTimeline({
               <stop offset="95%" stopColor="#8b5cf6" stopOpacity={0} />
             </linearGradient>
             <linearGradient id="colorDeployments" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#22c55e" stopOpacity={0.3} />
-              <stop offset="95%" stopColor="#22c55e" stopOpacity={0} />
+              <stop offset="5%" stopColor={deploymentColor} stopOpacity={0.3} />
+              <stop offset="95%" stopColor={deploymentColor} stopOpacity={0} />
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
@@ -201,7 +204,7 @@ export function ActivityTimeline({
           <Area
             type="monotone"
             dataKey="deployments"
-            stroke="#22c55e"
+            stroke={deploymentColor}
             strokeWidth={2}
             fill="url(#colorDeployments)"
             dot={false}
