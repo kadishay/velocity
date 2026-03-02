@@ -1,36 +1,37 @@
-import { ghPrList, ghApi } from './github.js';
+import { ghApi } from './github.js';
 import { logger } from '../utils/logger.js';
-import { formatDate, daysAgo } from '../utils/date.js';
-import type { PullRequest, Review, GHPullRequest, Settings } from '../types/index.js';
-
-// Core fields for PR listing - avoid expensive nested fields like 'reviews'
-// to prevent GraphQL node limit errors
-const PR_JSON_FIELDS = [
-  'number',
-  'title',
-  'state',
-  'isDraft',
-  'createdAt',
-  'updatedAt',
-  'mergedAt',
-  'closedAt',
-  'additions',
-  'deletions',
-  'changedFiles',
-  'labels',
-  'baseRefName',
-  'headRefName',
-  'url',
-  'author',
-];
+import { formatDate, daysAgo, formatDateTime } from '../utils/date.js';
+import type { PullRequest, Review, Settings } from '../types/index.js';
 
 interface ExtractPRsOptions {
   days: number;
   settings?: Settings;
 }
 
+interface RESTPullRequest {
+  number: number;
+  title: string;
+  state: 'open' | 'closed';
+  draft: boolean;
+  user: { login: string } | null;
+  created_at: string;
+  updated_at: string;
+  merged_at: string | null;
+  closed_at: string | null;
+  additions?: number;
+  deletions?: number;
+  changed_files?: number;
+  labels: { name: string }[];
+  base: { ref: string };
+  head: { ref: string };
+  html_url: string;
+  commits?: number;
+  comments?: number;
+}
+
 /**
- * Extract pull requests from a repository
+ * Extract pull requests from a repository using REST API with pagination
+ * REST API is more reliable for large repos than GraphQL (avoids node limits)
  */
 export async function extractPRs(
   repo: string,
@@ -38,37 +39,55 @@ export async function extractPRs(
 ): Promise<PullRequest[]> {
   const { days, settings } = options;
   const since = daysAgo(days);
-  const sinceDate = formatDate(since);
+  const sinceISO = formatDateTime(since);
 
-  logger.debug(`Extracting PRs from ${repo} since ${sinceDate}`);
+  logger.debug(`Extracting PRs from ${repo} since ${formatDate(since)}`);
 
-  // Fetch all PRs (open, closed, merged)
-  // We'll filter by date after fetching
-  const searchQuery = `updated:>=${sinceDate}`;
+  // Use REST API with pagination - more reliable for large repos
+  const endpoint = `/repos/${repo}/pulls`;
+  const allPRs: RESTPullRequest[] = [];
 
-  // Use smaller limit to avoid GraphQL node limit errors
-  // GitHub's limit is 500,000 nodes; with nested fields (reviews, commits, etc.)
-  // each PR can use many nodes, so we limit to 100 PRs per request
-  const rawPRs = await ghPrList<GHPullRequest>(repo, {
-    state: 'all',
-    limit: 100,
-    search: searchQuery,
-    json: PR_JSON_FIELDS,
-  });
+  // Fetch all states: open, closed (includes merged)
+  for (const state of ['open', 'closed'] as const) {
+    try {
+      const prs = await ghApi<RESTPullRequest[]>(endpoint, {
+        params: {
+          state,
+          sort: 'updated',
+          direction: 'desc',
+          per_page: 100,
+        },
+        paginate: true,
+      });
 
-  logger.debug(`Fetched ${rawPRs.length} PRs from ${repo}`);
+      // Filter by date - only include PRs updated since our cutoff
+      const filtered = prs.filter((pr) => new Date(pr.updated_at) >= since);
+      allPRs.push(...filtered);
+
+      logger.debug(`Fetched ${filtered.length} ${state} PRs from ${repo}`);
+    } catch (error) {
+      logger.warn(`Failed to fetch ${state} PRs from ${repo}: ${error}`);
+    }
+  }
+
+  // Deduplicate by PR number (in case a PR appears in both states)
+  const uniquePRs = Array.from(
+    new Map(allPRs.map((pr) => [pr.number, pr])).values()
+  );
+
+  logger.debug(`Fetched ${uniquePRs.length} total PRs from ${repo}`);
 
   // Transform and filter PRs
   const prs: PullRequest[] = [];
 
-  for (const raw of rawPRs) {
+  for (const raw of uniquePRs) {
     // Skip drafts if configured
-    if (settings?.excludeDraftPRs && raw.isDraft) {
+    if (settings?.excludeDraftPRs && raw.draft) {
       continue;
     }
 
     // Skip excluded authors
-    const author = raw.author?.login || 'unknown';
+    const author = raw.user?.login || 'unknown';
     if (settings?.excludeAuthors?.includes(author)) {
       continue;
     }
@@ -79,7 +98,7 @@ export async function extractPRs(
       continue;
     }
 
-    // Fetch reviews separately to avoid GraphQL node limits
+    // Fetch reviews separately
     const reviews = await getPRReviews(repo, raw.number);
     const pr = transformPR(raw, reviews);
     prs.push(pr);
@@ -91,37 +110,37 @@ export async function extractPRs(
 }
 
 /**
- * Transform GitHub API PR response to our schema
+ * Transform GitHub REST API PR response to our schema
  */
-function transformPR(raw: GHPullRequest, reviews: Review[] = []): PullRequest {
-  // Determine state (GitHub API has separate merged state)
+function transformPR(raw: RESTPullRequest, reviews: Review[] = []): PullRequest {
+  // Determine state (REST API: merged_at indicates merged)
   let state: 'open' | 'closed' | 'merged' = 'open';
-  if (raw.mergedAt) {
+  if (raw.merged_at) {
     state = 'merged';
-  } else if (raw.state === 'closed' || raw.closedAt) {
+  } else if (raw.state === 'closed' || raw.closed_at) {
     state = 'closed';
   }
 
   return {
     number: raw.number,
     title: raw.title,
-    author: raw.author?.login || 'unknown',
+    author: raw.user?.login || 'unknown',
     state,
-    isDraft: raw.isDraft || false,
-    createdAt: raw.createdAt,
-    updatedAt: raw.updatedAt,
-    mergedAt: raw.mergedAt,
-    closedAt: raw.closedAt,
+    isDraft: raw.draft || false,
+    createdAt: raw.created_at,
+    updatedAt: raw.updated_at,
+    mergedAt: raw.merged_at,
+    closedAt: raw.closed_at,
     additions: raw.additions || 0,
     deletions: raw.deletions || 0,
-    changedFiles: raw.changedFiles || 0,
+    changedFiles: raw.changed_files || 0,
     labels: raw.labels?.map((l) => l.name) || [],
     reviews,
-    commits: raw.commits?.totalCount || 0,
-    comments: raw.comments?.totalCount || 0,
-    baseBranch: raw.baseRefName || 'main',
-    headBranch: raw.headRefName || '',
-    url: raw.url,
+    commits: raw.commits || 0,
+    comments: raw.comments || 0,
+    baseBranch: raw.base?.ref || 'main',
+    headBranch: raw.head?.ref || '',
+    url: raw.html_url,
   };
 }
 

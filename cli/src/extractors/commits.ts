@@ -37,28 +37,60 @@ export async function extractCommits(
 
     logger.debug(`Fetched ${rawCommits.length} commits from ${repo}`);
 
-    // Transform and filter commits
-    const commits: Commit[] = [];
-
-    for (const raw of rawCommits) {
+    // Filter commits first before fetching details
+    const filteredRawCommits = rawCommits.filter((raw) => {
       const author = raw.author?.login || raw.commit.author.name;
+      return !settings?.excludeAuthors?.includes(author);
+    });
 
-      // Skip excluded authors
-      if (settings?.excludeAuthors?.includes(author)) {
-        continue;
-      }
+    logger.debug(`Filtered to ${filteredRawCommits.length} commits after excluding authors`);
 
-      const commit = transformCommit(raw);
-      commits.push(commit);
-    }
+    // Fetch detailed stats for each commit (list endpoint doesn't include stats)
+    const commits = await fetchCommitDetails(repo, filteredRawCommits);
 
-    logger.debug(`Processed ${commits.length} commits after filtering`);
+    logger.debug(`Processed ${commits.length} commits with stats`);
 
     return commits;
   } catch (error) {
     logger.warn(`Failed to extract commits from ${repo}: ${error}`);
     return [];
   }
+}
+
+/**
+ * Fetch detailed stats for commits in batches to avoid rate limits
+ */
+async function fetchCommitDetails(
+  repo: string,
+  rawCommits: GHCommit[]
+): Promise<Commit[]> {
+  const CONCURRENCY = 10; // Fetch 10 commits at a time
+  const commits: Commit[] = [];
+
+  for (let i = 0; i < rawCommits.length; i += CONCURRENCY) {
+    const batch = rawCommits.slice(i, i + CONCURRENCY);
+    const batchPromises = batch.map(async (raw) => {
+      try {
+        // Fetch individual commit to get stats
+        const detailed = await ghApi<GHCommit>(`/repos/${repo}/commits/${raw.sha}`);
+        return transformCommit(detailed);
+      } catch (error) {
+        // Fall back to commit without stats if fetch fails
+        logger.debug(`Failed to fetch details for ${raw.sha}: ${error}`);
+        return transformCommit(raw);
+      }
+    });
+
+    const batchResults = await Promise.all(batchPromises);
+    commits.push(...batchResults);
+
+    // Log progress for large repos
+    if (rawCommits.length > 50 && (i + CONCURRENCY) % 100 === 0) {
+      logger.debug(`Fetched stats for ${Math.min(i + CONCURRENCY, rawCommits.length)}/${rawCommits.length} commits`);
+    }
+  }
+
+  return commits;
 }
 
 /**
